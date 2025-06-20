@@ -8,8 +8,8 @@ export interface Card {
   types: string[];
   hp: string | null;
   number: string;
-  artist: string;
-  rarity: string;
+  artist: string | null;
+  rarity: string | null;
   setId: string;
   setName: string;
   setSeries: string;
