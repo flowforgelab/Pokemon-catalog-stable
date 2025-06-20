@@ -1,79 +1,57 @@
-import { NextRequest, NextResponse } from "next/server";
-
-// Mock data for now - will connect to real database later
-const mockCards = [
-  {
-    id: "1",
-    pokemonTcgId: "base1-4",
-    name: "Charizard",
-    supertype: "Pokémon",
-    subtypes: ["Stage 2"],
-    types: ["Fire"],
-    hp: "120",
-    number: "4",
-    artist: "Mitsuhiro Arita",
-    rarity: "Rare Holo",
-    setId: "base1",
-    setName: "Base Set",
-    setSeries: "Base",
-    setTotal: 102,
-    imageSmall: "https://images.pokemontcg.io/base1/4.png",
-    imageLarge: "https://images.pokemontcg.io/base1/4_hires.png",
-    marketPrice: 425.99,
-    tcgplayerUrl: "https://www.tcgplayer.com/product/42378",
-  },
-  {
-    id: "2",
-    pokemonTcgId: "base1-58",
-    name: "Pikachu",
-    supertype: "Pokémon",
-    subtypes: ["Basic"],
-    types: ["Lightning"],
-    hp: "40",
-    number: "58",
-    artist: "Mitsuhiro Arita",
-    rarity: "Common",
-    setId: "base1",
-    setName: "Base Set",
-    setSeries: "Base",
-    setTotal: 102,
-    imageSmall: "https://images.pokemontcg.io/base1/58.png",
-    imageLarge: "https://images.pokemontcg.io/base1/58_hires.png",
-    marketPrice: 8.99,
-    tcgplayerUrl: "https://www.tcgplayer.com/product/42432",
-  },
-  {
-    id: "3",
-    pokemonTcgId: "base1-6",
-    name: "Gyarados",
-    supertype: "Pokémon",
-    subtypes: ["Stage 1"],
-    types: ["Water"],
-    hp: "100",
-    number: "6",
-    artist: "Mitsuhiro Arita",
-    rarity: "Rare Holo",
-    setId: "base1",
-    setName: "Base Set",
-    setSeries: "Base",
-    setTotal: 102,
-    imageSmall: "https://images.pokemontcg.io/base1/6.png",
-    imageLarge: "https://images.pokemontcg.io/base1/6_hires.png",
-    marketPrice: 45.99,
-    tcgplayerUrl: "https://www.tcgplayer.com/product/42380",
-  },
-];
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
 
 export async function GET(request: NextRequest) {
   try {
-    // In production, this would query the database
+    const searchParams = request.nextUrl.searchParams;
+    const page = parseInt(searchParams.get('page') || '1');
+    const limit = parseInt(searchParams.get('limit') || '20');
+    const search = searchParams.get('search') || '';
+    const type = searchParams.get('type') || '';
+    const rarity = searchParams.get('rarity') || '';
+
+    const skip = (page - 1) * limit;
+
+    const where: any = {};
+
+    if (search) {
+      where.OR = [
+        { name: { contains: search, mode: 'insensitive' } },
+        { set: { contains: search, mode: 'insensitive' } },
+      ];
+    }
+
+    if (type) {
+      where.types = { has: type };
+    }
+
+    if (rarity) {
+      where.rarity = rarity;
+    }
+
+    const [cards, total] = await Promise.all([
+      prisma.card.findMany({
+        where,
+        skip,
+        take: limit,
+        orderBy: { name: 'asc' },
+      }),
+      prisma.card.count({ where }),
+    ]);
+
     return NextResponse.json({
-      cards: mockCards,
-      total: mockCards.length,
+      cards,
+      pagination: {
+        page,
+        limit,
+        total,
+        totalPages: Math.ceil(total / limit),
+      },
     });
   } catch (error) {
+    console.error('Error fetching cards:', error);
     return NextResponse.json(
-      { error: "Failed to fetch cards" },
+      { error: 'Failed to fetch cards' },
       { status: 500 }
     );
   }

@@ -1,66 +1,86 @@
 import { SignedIn, SignedOut } from '@clerk/nextjs'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Pokemon TCG Catalog</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center p-8">
+      <div className="z-10 max-w-5xl w-full">
+        <h1 className="text-4xl font-bold mb-2 text-center">Pokemon TCG Catalog</h1>
+        <p className="text-center text-gray-600 mb-8">Track and manage your Pokemon card collection</p>
         
-        <div className="flex justify-center mb-8">
-          <SignedOut>
-            <div className="text-center">
-              <p className="mb-4 text-lg">Sign in to start tracking your Pokemon card collection</p>
-              <p className="text-gray-600">Click the Sign In button in the header to get started</p>
-            </div>
-          </SignedOut>
-          
-          <SignedIn>
-            <div className="text-center">
-              <p className="mb-4 text-lg">Welcome back!</p>
-              <Link href="/dashboard" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block">
-                Go to Dashboard
-              </Link>
-            </div>
-          </SignedIn>
-        </div>
+        <SignedOut>
+          <Card className="max-w-md mx-auto mb-8">
+            <CardHeader>
+              <CardTitle>Welcome, Trainer!</CardTitle>
+              <CardDescription>Sign in to start building your collection</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-gray-600 mb-4">
+                Create an account to track your cards, build decks, and discover new additions for your collection.
+              </p>
+              <div className="flex gap-4">
+                <Link href="/cards" className="flex-1">
+                  <Button variant="outline" className="w-full">Browse Cards</Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </SignedOut>
         
-        <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100">
-            <h2 className="mb-3 text-2xl font-semibold">
-              Simple Auth{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                →
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-sm opacity-50">
-              Clerk handles all authentication complexity. Just works.
-            </p>
-          </div>
+        <SignedIn>
+          <Card className="max-w-md mx-auto mb-8">
+            <CardHeader>
+              <CardTitle>Welcome back!</CardTitle>
+              <CardDescription>Continue managing your collection</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex gap-4">
+                <Link href="/dashboard" className="flex-1">
+                  <Button className="w-full">Go to Dashboard</Button>
+                </Link>
+                <Link href="/cards" className="flex-1">
+                  <Button variant="outline" className="w-full">Browse Cards</Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </SignedIn>
+        
+        <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 gap-4 mt-8">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-xl">9,000+ Cards</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-gray-600">
+                Browse through thousands of Pokemon cards from various sets and expansions.
+              </p>
+            </CardContent>
+          </Card>
           
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100">
-            <h2 className="mb-3 text-2xl font-semibold">
-              One Platform{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                →
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-sm opacity-50">
-              Everything on Vercel. No CORS, no complexity.
-            </p>
-          </div>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-xl">Track Collections</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-gray-600">
+                Keep track of which cards you own and which ones you're looking for.
+              </p>
+            </CardContent>
+          </Card>
           
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100">
-            <h2 className="mb-3 text-2xl font-semibold">
-              Stable Stack{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                →
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-sm opacity-50">
-              Next.js 14 + React 18. Battle-tested in production.
-            </p>
-          </div>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-xl">Build Decks</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-gray-600">
+                Create and manage competitive decks with our deck building tools.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </main>

@@ -1,19 +1,34 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Input } from "@/components/ui/input";
 import { PokemonCard } from "@/components/pokemon-card";
-import { PokemonCard as PokemonCardType } from "@/lib/types";
+import { PokemonGrid } from "@/components/pokemon-grid";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Button } from "@/components/ui/button";
 
 export default function CardsPage() {
-  const [cards, setCards] = useState<PokemonCardType[]>([]);
+  const [cards, setCards] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
     async function fetchCards() {
       try {
-        const response = await fetch("/api/cards");
+        setLoading(true);
+        const params = new URLSearchParams({
+          page: page.toString(),
+          limit: "20",
+          search: searchTerm,
+        });
+        
+        const response = await fetch(`/api/cards?${params}`);
         const data = await response.json();
-        setCards(data.cards);
+        
+        setCards(data.cards || []);
+        setTotalPages(data.pagination?.totalPages || 1);
       } catch (error) {
         console.error("Failed to fetch cards:", error);
       } finally {
@@ -22,14 +37,21 @@ export default function CardsPage() {
     }
 
     fetchCards();
-  }, []);
+  }, [page, searchTerm]);
 
-  if (loading) {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+    setPage(1);
+  };
+
+  if (loading && cards.length === 0) {
     return (
       <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-8">Pokemon Cards</h1>
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">Loading cards...</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          {[...Array(20)].map((_, i) => (
+            <Skeleton key={i} className="h-[400px] rounded-lg" />
+          ))}
         </div>
       </div>
     );
@@ -37,17 +59,48 @@ export default function CardsPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-8">Pokemon Cards</h1>
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold mb-4">Pokemon Cards</h1>
+        <Input
+          type="search"
+          placeholder="Search cards..."
+          value={searchTerm}
+          onChange={handleSearch}
+          className="max-w-md"
+        />
+      </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <PokemonGrid>
         {cards.map((card) => (
           <PokemonCard key={card.id} card={card} />
         ))}
-      </div>
+      </PokemonGrid>
       
-      {cards.length === 0 && (
+      {cards.length === 0 && !loading && (
         <div className="text-center py-12">
           <p className="text-gray-500">No cards found.</p>
+        </div>
+      )}
+      
+      {totalPages > 1 && (
+        <div className="flex justify-center gap-2 mt-8">
+          <Button
+            variant="outline"
+            onClick={() => setPage(p => Math.max(1, p - 1))}
+            disabled={page === 1}
+          >
+            Previous
+          </Button>
+          <span className="flex items-center px-4">
+            Page {page} of {totalPages}
+          </span>
+          <Button
+            variant="outline"
+            onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+            disabled={page === totalPages}
+          >
+            Next
+          </Button>
         </div>
       )}
     </div>
