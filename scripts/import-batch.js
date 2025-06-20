@@ -1,14 +1,9 @@
-// Full import script to update all cards with game data from Pokemon TCG API
+// Import game data for a small batch of cards
 require('dotenv').config({ path: '.env.local' });
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
 const POKEMON_TCG_API = 'https://api.pokemontcg.io/v2';
-const BATCH_SIZE = 50; // Process in batches to avoid memory issues
-const DELAY_MS = 100; // Delay between API calls to respect rate limits
-
-// Helper to delay between API calls
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchCardData(pokemonTcgId) {
   try {
@@ -104,62 +99,71 @@ async function updateCardWithGameData(card, apiData) {
   }
 }
 
-async function importGameData() {
-  console.log('Starting game data import...');
+async function importBatch() {
+  console.log('Importing game data for first 10 cards...\n');
   
   try {
-    // Get total count of cards
-    const totalCards = await prisma.card.count();
-    console.log(`Found ${totalCards} cards to update`);
+    // Get first 10 cards
+    const cards = await prisma.card.findMany({
+      take: 10,
+      orderBy: { createdAt: 'asc' }
+    });
 
-    let processed = 0;
+    console.log('Cards to update:');
+    cards.forEach(card => {
+      console.log(`- ${card.name} (${card.pokemonTcgId})`);
+    });
+    console.log();
+
     let updated = 0;
     let failed = 0;
 
-    // Process cards in batches
-    for (let offset = 0; offset < totalCards; offset += BATCH_SIZE) {
-      const cards = await prisma.card.findMany({
-        skip: offset,
-        take: BATCH_SIZE,
-        orderBy: { createdAt: 'asc' }
-      });
-
-      console.log(`\nProcessing batch ${Math.floor(offset / BATCH_SIZE) + 1} (${cards.length} cards)`);
-
-      for (const card of cards) {
-        processed++;
-        
-        // Show progress
-        if (processed % 10 === 0) {
-          const progress = ((processed / totalCards) * 100).toFixed(1);
-          console.log(`Progress: ${processed}/${totalCards} (${progress}%)`);
-        }
-
-        // Fetch data from Pokemon TCG API
-        const apiData = await fetchCardData(card.pokemonTcgId);
-        
-        if (apiData) {
-          const result = await updateCardWithGameData(card, apiData);
-          if (result) {
-            updated++;
-          } else {
-            failed++;
-          }
+    for (const card of cards) {
+      console.log(`Fetching data for ${card.pokemonTcgId}...`);
+      
+      // Fetch data from Pokemon TCG API
+      const apiData = await fetchCardData(card.pokemonTcgId);
+      
+      if (apiData) {
+        const result = await updateCardWithGameData(card, apiData);
+        if (result) {
+          console.log(`✓ Updated ${card.name}`);
+          updated++;
         } else {
-          console.log(`No API data found for ${card.pokemonTcgId}`);
+          console.log(`✗ Failed to update ${card.name}`);
           failed++;
         }
-
-        // Delay between API calls
-        await delay(DELAY_MS);
+      } else {
+        console.log(`✗ No API data found for ${card.pokemonTcgId}`);
+        failed++;
       }
+
+      // Small delay to respect rate limits
+      await new Promise(resolve => setTimeout(resolve, 100));
     }
 
     console.log('\n=== Import Complete ===');
-    console.log(`Total processed: ${processed}`);
     console.log(`Successfully updated: ${updated}`);
     console.log(`Failed: ${failed}`);
-    console.log(`Success rate: ${((updated / processed) * 100).toFixed(1)}%`);
+
+    // Check results
+    const firstCard = await prisma.card.findUnique({
+      where: { id: cards[0].id },
+      include: {
+        attacks: true,
+        abilities: true,
+        weaknesses: true,
+        resistances: true,
+      }
+    });
+
+    console.log('\nFirst card now has:');
+    console.log(`- Attacks: ${firstCard.attacks.length}`);
+    console.log(`- Abilities: ${firstCard.abilities.length}`);
+    console.log(`- Weaknesses: ${firstCard.weaknesses.length}`);
+    console.log(`- Resistances: ${firstCard.resistances.length}`);
+    console.log(`- Evolution: ${firstCard.evolvesFrom || 'None'}`);
+    console.log(`- Retreat Cost: ${firstCard.retreatCost || 0}`);
 
   } catch (error) {
     console.error('Import failed:', error);
@@ -168,12 +172,4 @@ async function importGameData() {
   }
 }
 
-// Add progress tracking for long-running import
-process.on('SIGINT', async () => {
-  console.log('\nImport interrupted. Cleaning up...');
-  await prisma.$disconnect();
-  process.exit(0);
-});
-
-// Run the import
-importGameData();
+importBatch();

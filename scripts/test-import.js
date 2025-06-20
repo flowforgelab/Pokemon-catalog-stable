@@ -1,5 +1,5 @@
 // Test import with just a few cards to verify everything works
-require('dotenv').config();
+require('dotenv').config({ path: '.env.local' });
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
