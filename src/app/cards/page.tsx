@@ -71,7 +71,17 @@ export default function CardsPage() {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {cards.map((card) => (
-          <PokemonCard key={card.id} card={card} />
+          <PokemonCard 
+            key={card.id} 
+            id={card.pokemonTcgId}
+            name={card.name}
+            image={card.imageSmall}
+            types={card.types}
+            hp={card.hp ? parseInt(card.hp) : undefined}
+            rarity={card.rarity}
+            price={card.marketPrice}
+            tcgplayerUrl={card.tcgplayerUrl}
+          />
         ))}
       </div>
       
