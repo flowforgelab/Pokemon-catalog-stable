@@ -10,8 +10,9 @@ export async function GET(request: NextRequest) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '20');
     const search = searchParams.get('search') || '';
-    const type = searchParams.get('type') || '';
-    const rarity = searchParams.get('rarity') || '';
+    const types = searchParams.get('types')?.split(',').filter(Boolean) || [];
+    const rarities = searchParams.get('rarities')?.split(',').filter(Boolean) || [];
+    const sortBy = searchParams.get('sortBy') || 'name';
 
     const skip = (page - 1) * limit;
 
@@ -20,16 +21,28 @@ export async function GET(request: NextRequest) {
     if (search) {
       where.OR = [
         { name: { contains: search, mode: 'insensitive' } },
-        { set: { contains: search, mode: 'insensitive' } },
+        { setName: { contains: search, mode: 'insensitive' } },
       ];
     }
 
-    if (type) {
-      where.types = { has: type };
+    if (types.length > 0) {
+      where.types = { hasSome: types };
     }
 
-    if (rarity) {
-      where.rarity = rarity;
+    if (rarities.length > 0) {
+      where.rarity = { in: rarities };
+    }
+
+    // Build orderBy
+    let orderBy: any = { name: 'asc' };
+    switch (sortBy) {
+      case '-name': orderBy = { name: 'desc' }; break;
+      case 'price': orderBy = { marketPrice: 'asc' }; break;
+      case '-price': orderBy = { marketPrice: 'desc' }; break;
+      case 'hp': orderBy = { hp: 'asc' }; break;
+      case '-hp': orderBy = { hp: 'desc' }; break;
+      case 'rarity': orderBy = { rarity: 'asc' }; break;
+      case 'set': orderBy = { setName: 'asc' }; break;
     }
 
     const [cards, total] = await Promise.all([
@@ -37,7 +50,7 @@ export async function GET(request: NextRequest) {
         where,
         skip,
         take: limit,
-        orderBy: { name: 'asc' },
+        orderBy,
       }),
       prisma.card.count({ where }),
     ]);
