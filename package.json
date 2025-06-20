@@ -9,7 +9,11 @@
     "lint": "next lint",
     "postinstall": "prisma generate",
     "db:push": "dotenv -e .env.local -- npx prisma db push",
-    "db:studio": "dotenv -e .env.local -- npx prisma studio"
+    "db:studio": "dotenv -e .env.local -- npx prisma studio",
+    "migrate": "node scripts/run-migrations.js",
+    "migrate:seed": "node scripts/migrations/001_initial_seed.js",
+    "migrate:prices": "node scripts/migrations/002_update_card_prices.js",
+    "migrate:cleanup": "node scripts/migrations/003_fix_missing_data.js"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.5",
