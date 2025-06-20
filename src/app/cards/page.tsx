@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { PokemonCard } from "@/components/pokemon/pokemon-card";
-import { PokemonGrid } from "@/components/pokemon/pokemon-grid";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 
@@ -70,11 +69,11 @@ export default function CardsPage() {
         />
       </div>
       
-      <PokemonGrid>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {cards.map((card) => (
           <PokemonCard key={card.id} card={card} />
         ))}
-      </PokemonGrid>
+      </div>
       
       {cards.length === 0 && !loading && (
         <div className="text-center py-12">
