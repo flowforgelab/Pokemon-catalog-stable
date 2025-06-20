@@ -1,5 +1,5 @@
-import { Card, Collection, Deck, User, PokemonType, CardRarity } from '@/lib/types';
-import { POKEMON_TYPES, CARD_RARITIES } from '@/lib/types';
+import { Card, Collection, Deck, User, PokemonType, CardRarity } from '@/lib/types/index';
+import { POKEMON_TYPES, CARD_RARITIES } from '@/lib/types/index';
 
 // Type Guards
 export function isCard(obj: any): obj is Card {

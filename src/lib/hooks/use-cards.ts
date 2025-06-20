@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card, CardsResponse, SearchFilters } from '@/lib/types';
+import { Card, CardsResponse, SearchFilters } from '@/lib/types/index';
 
 interface UseCardsOptions {
   page?: number;

@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { PokemonCard } from "@/components/pokemon/pokemon-card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
-import { Card, CardsResponse } from "@/lib/types";
+import { Card, CardsResponse } from "@/lib/types/index";
 
 export default function CardsPage() {
   const [cards, setCards] = useState<Card[]>([]);

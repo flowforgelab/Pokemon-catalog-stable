@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-import { CardsResponse } from '@/lib/types';
+import { CardsResponse } from '@/lib/types/index';
 
 export const dynamic = 'force-dynamic';
 

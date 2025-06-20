@@ -1,4 +1,4 @@
-import { PokemonType, CardRarity, AnimeEra } from '@/lib/types';
+import { PokemonType, CardRarity, AnimeEra } from '@/lib/types/index';
 
 // Pokemon Type Colors (matching official TCG colors)
 export const TYPE_COLORS: Record<PokemonType, string> = {
