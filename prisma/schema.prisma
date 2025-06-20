@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Card {
+  id            String   @id @default(cuid())
+  pokemonTcgId  String   @unique
+  name          String
+  supertype     String
+  subtypes      String[]
+  types         String[]
+  hp            String?
+  number        String
+  artist        String?
+  rarity        String?
+  setId         String
+  setName       String
+  setSeries     String
+  setTotal      Int
+  imageSmall    String
+  imageLarge    String
+  marketPrice   Float?
+  tcgplayerUrl  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  collectionCards CollectionCard[]
+  deckCards       DeckCard[]
+
+  @@index([name])
+  @@index([types])
+  @@index([setName])
+  @@index([rarity])
+}
+
+model Collection {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  description String?
+  isPublic    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  cards CollectionCard[]
+
+  @@index([userId])
+}
+
+model CollectionCard {
+  id           String   @id @default(cuid())
+  collectionId String
+  cardId       String
+  quantity     Int      @default(1)
+  condition    String   @default("NM")
+  language     String   @default("EN")
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  collection Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  card       Card       @relation(fields: [cardId], references: [id])
+
+  @@unique([collectionId, cardId, condition, language])
+  @@index([collectionId])
+  @@index([cardId])
+}
+
+model Deck {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  format      String   @default("standard")
+  description String?
+  isPublic    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  cards DeckCard[]
+
+  @@index([userId])
+}
+
+model DeckCard {
+  id        String   @id @default(cuid())
+  deckId    String
+  cardId    String
+  quantity  Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  deck Deck @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  card Card @relation(fields: [cardId], references: [id])
+
+  @@unique([deckId, cardId])
+  @@index([deckId])
+  @@index([cardId])
+}
