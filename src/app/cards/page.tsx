@@ -4,18 +4,22 @@ import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { PokemonCard } from "@/components/pokemon/pokemon-card";
-import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardsResponse } from "@/lib/types/index";
 import { CardsFilter } from "@/components/cards-filter";
 import { MobileFilterSheet } from "@/components/mobile-filter-sheet";
+import { SkeletonCard } from "@/components/ui/skeleton-card";
+import { EmptyState } from "@/components/ui/empty-state";
+import { ErrorState } from "@/components/ui/error-state";
 import { useDebounce } from "@/lib/hooks/use-debounce";
+import { Search } from "lucide-react";
 
 export default function CardsPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || "");
   const [totalPages, setTotalPages] = useState(1);
   
@@ -26,6 +30,7 @@ export default function CardsPage() {
     async function fetchCards() {
       try {
         setLoading(true);
+        setError(null);
         const params = new URLSearchParams(searchParams.toString());
         
         // Update search param with debounced value
@@ -36,12 +41,15 @@ export default function CardsPage() {
         }
         
         const response = await fetch(`/api/cards?${params}`);
+        if (!response.ok) throw new Error('Failed to fetch cards');
+        
         const data: CardsResponse = await response.json();
         
         setCards(data.cards || []);
         setTotalPages(data.pagination?.totalPages || 1);
       } catch (error) {
         console.error("Failed to fetch cards:", error);
+        setError(error instanceof Error ? error.message : 'Failed to load cards');
       } finally {
         setLoading(false);
       }
@@ -80,11 +88,13 @@ export default function CardsPage() {
         <h1 className="text-3xl font-bold mb-8">Pokemon Cards</h1>
         <div className="flex gap-6">
           <aside className="w-64 shrink-0 hidden lg:block">
-            <Skeleton className="h-96" />
+            <div className="space-y-4">
+              <SkeletonCard />
+            </div>
           </aside>
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[...Array(20)].map((_, i) => (
-              <Skeleton key={i} className="h-[400px] rounded-lg" />
+              <SkeletonCard key={i} />
             ))}
           </div>
         </div>
@@ -130,10 +140,20 @@ export default function CardsPage() {
             ))}
           </div>
           
-          {cards.length === 0 && !loading && (
-            <div className="text-center py-12">
-              <p className="text-gray-500">No cards found.</p>
-            </div>
+          {error && !loading && (
+            <ErrorState 
+              retry={() => window.location.reload()}
+              className="col-span-full py-12"
+            />
+          )}
+          
+          {!error && cards.length === 0 && !loading && (
+            <EmptyState 
+              icon={<Search className="h-12 w-12" />}
+              title="No cards found"
+              description="Try adjusting your filters or search term"
+              className="col-span-full py-12"
+            />
           )}
           
           {totalPages > 1 && (

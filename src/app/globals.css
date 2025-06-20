@@ -230,6 +230,32 @@
   }
 }
 
+/* Focus and Hover Utilities */
+@layer utilities {
+  /* Standard focus-visible styles */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+  
+  /* Standard hover states */
+  .hover-lift {
+    @apply transition-transform duration-base hover:scale-105;
+  }
+  
+  .hover-glow {
+    @apply transition-shadow duration-base hover:shadow-lg;
+  }
+  
+  .hover-dim {
+    @apply transition-opacity duration-fast hover:opacity-80;
+  }
+  
+  /* Interactive states */
+  .interactive {
+    @apply focus-ring hover-glow active:scale-[0.98] transition-all duration-fast;
+  }
+}
+
 /* Pokemon Type Utilities */
 @layer utilities {
   .type-normal { background-color: rgb(var(--pokemon-normal)); }
