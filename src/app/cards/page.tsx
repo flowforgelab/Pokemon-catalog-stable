@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
-import { PokemonCard } from "@/components/pokemon-card";
-import { PokemonGrid } from "@/components/pokemon-grid";
+import { PokemonCard } from "@/components/pokemon/pokemon-card";
+import { PokemonGrid } from "@/components/pokemon/pokemon-grid";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 
