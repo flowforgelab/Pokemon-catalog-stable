@@ -51,6 +51,12 @@ export async function GET(request: NextRequest) {
         skip,
         take: limit,
         orderBy,
+        include: {
+          attacks: true,
+          abilities: true,
+          weaknesses: true,
+          resistances: true,
+        }
       }),
       prisma.card.count({ where }),
     ]);

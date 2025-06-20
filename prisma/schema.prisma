@@ -5,7 +5,7 @@ generator client {
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")
-  directUrl = env("DATABASE_URL_UNPOOLED")
+  directUrl = env("DATABASE_URL_NON_POOLING")
 }
 
 model Card {
@@ -30,6 +30,24 @@ model Card {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
+  // Game mechanics
+  evolvesFrom     String?
+  evolvesTo       String[]
+  retreatCost     Int?
+  regulationMark  String?
+  rules           String[]
+  flavorText      String?
+  
+  // Legalities
+  standardLegal   Boolean  @default(false)
+  expandedLegal   Boolean  @default(false)
+  unlimitedLegal  Boolean  @default(false)
+  
+  // Relations
+  attacks         Attack[]
+  abilities       Ability[]
+  weaknesses      Weakness[]
+  resistances     Resistance[]
   collectionCards CollectionCard[]
   deckCards       DeckCard[]
 
@@ -37,6 +55,56 @@ model Card {
   @@index([types])
   @@index([setName])
   @@index([rarity])
+  @@index([evolvesFrom])
+  @@index([regulationMark])
+}
+
+model Attack {
+  id                  String   @id @default(cuid())
+  cardId              String
+  name                String
+  cost                String[]
+  damage              String?
+  text                String?
+  convertedEnergyCost Int
+  
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  
+  @@index([cardId])
+}
+
+model Ability {
+  id     String @id @default(cuid())
+  cardId String
+  name   String
+  type   String
+  text   String
+  
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  
+  @@index([cardId])
+}
+
+model Weakness {
+  id     String @id @default(cuid())
+  cardId String
+  type   String
+  value  String
+  
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  
+  @@index([cardId])
+}
+
+model Resistance {
+  id     String @id @default(cuid())
+  cardId String
+  type   String
+  value  String
+  
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  
+  @@index([cardId])
 }
 
 model Collection {

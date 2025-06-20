@@ -18,8 +18,61 @@ export interface Card {
   imageLarge: string;
   marketPrice: number | null;
   tcgplayerUrl: string | null;
+  
+  // Game mechanics
+  evolvesFrom: string | null;
+  evolvesTo: string[];
+  retreatCost: number | null;
+  regulationMark: string | null;
+  rules: string[];
+  flavorText: string | null;
+  
+  // Legalities
+  standardLegal: boolean;
+  expandedLegal: boolean;
+  unlimitedLegal: boolean;
+  
+  // Relations
+  attacks?: Attack[];
+  abilities?: Ability[];
+  weaknesses?: Weakness[];
+  resistances?: Resistance[];
+  
   createdAt: Date;
   updatedAt: Date;
+}
+
+// Game Mechanic Types
+export interface Attack {
+  id: string;
+  cardId: string;
+  name: string;
+  cost: string[];
+  damage: string | null;
+  text: string | null;
+  convertedEnergyCost: number;
+}
+
+export interface Ability {
+  id: string;
+  cardId: string;
+  name: string;
+  type: string;
+  text: string;
+}
+
+export interface Weakness {
+  id: string;
+  cardId: string;
+  type: string;
+  value: string;
+}
+
+export interface Resistance {
+  id: string;
+  cardId: string;
+  type: string;
+  value: string;
 }
 
 // API Response Types
