@@ -1,15 +1,11 @@
 {
-  "name": "scripts",
+  "name": "pokemon-catalog-scripts",
   "version": "1.0.0",
-  "description": "",
-  "main": "test-database.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-db": "node -r dotenv/config test-database.js dotenv_config_path=../.env.local",
+    "export": "node export-all-cards.js",
+    "import": "node -r dotenv/config import-to-neon.js dotenv_config_path=../.env.local"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@prisma/client": "^6.10.1"
   }
