@@ -79,9 +79,9 @@ export default function CardsPage() {
             image={card.imageSmall}
             types={card.types}
             hp={card.hp ? parseInt(card.hp) : undefined}
-            rarity={card.rarity}
-            price={card.marketPrice}
-            tcgplayerUrl={card.tcgplayerUrl}
+            rarity={card.rarity || undefined}
+            price={card.marketPrice || undefined}
+            tcgplayerUrl={card.tcgplayerUrl || undefined}
           />
         ))}
       </div>
