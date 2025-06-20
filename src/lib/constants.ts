@@ -1,5 +1,35 @@
 import { PokemonType, CardRarity, AnimeEra } from '@/lib/types/index';
 
+// Pokemon Types array for filters
+export const POKEMON_TYPES = [
+  'Grass',
+  'Fire',
+  'Water',
+  'Lightning',
+  'Psychic',
+  'Fighting',
+  'Darkness',
+  'Metal',
+  'Dragon',
+  'Fairy',
+  'Colorless'
+] as const;
+
+// Card Rarities array for filters
+export const CARD_RARITIES = [
+  'Common',
+  'Uncommon',
+  'Rare',
+  'Rare Holo',
+  'Rare Holo EX',
+  'Rare Holo GX',
+  'Rare Holo V',
+  'Rare Holo VMAX',
+  'Rare Ultra',
+  'Rare Secret',
+  'Promo'
+] as const;
+
 // Pokemon Type Colors (matching official TCG colors)
 export const TYPE_COLORS: Record<PokemonType, string> = {
   Grass: '#4CAF50',
