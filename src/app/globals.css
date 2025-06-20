@@ -239,20 +239,20 @@
   
   /* Standard hover states */
   .hover-lift {
-    @apply transition-transform duration-base hover:scale-105;
+    @apply transition-transform duration-200 hover:scale-105;
   }
   
   .hover-glow {
-    @apply transition-shadow duration-base hover:shadow-lg;
+    @apply transition-shadow duration-200 hover:shadow-lg;
   }
   
   .hover-dim {
-    @apply transition-opacity duration-fast hover:opacity-80;
+    @apply transition-opacity duration-150 hover:opacity-80;
   }
   
   /* Interactive states */
   .interactive {
-    @apply focus-ring hover-glow active:scale-[0.98] transition-all duration-fast;
+    @apply focus-ring hover-glow active:scale-[0.98] transition-all duration-150;
   }
   
   /* Elevation system */
@@ -266,9 +266,9 @@
   
   /* Card elevations */
   .card-flat { @apply elevation-none; }
-  .card-raised { @apply elevation-sm hover:elevation-md transition-shadow duration-base; }
-  .card-floating { @apply elevation-md hover:elevation-lg transition-shadow duration-base; }
-  .card-lifted { @apply elevation-lg hover:elevation-xl transition-shadow duration-base; }
+  .card-raised { @apply elevation-sm hover:elevation-md transition-shadow duration-200; }
+  .card-floating { @apply elevation-md hover:elevation-lg transition-shadow duration-200; }
+  .card-lifted { @apply elevation-lg hover:elevation-xl transition-shadow duration-200; }
   
   /* Page animations */
   .animate-in {
