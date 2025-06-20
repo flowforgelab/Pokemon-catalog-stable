@@ -9,6 +9,10 @@ import {
 } from "@clerk/nextjs";
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { ThemeProvider } from "@/lib/theme-provider"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { MobileNav } from "@/components/mobile-nav"
+import { Toaster } from "@/components/ui/toaster"
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,43 +29,57 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
-          <header className="flex justify-between items-center p-4 bg-white border-b">
-            <div className="flex items-center gap-6">
-              <Link href="/" className="text-xl font-bold hover:text-gray-700">
-                Pokemon TCG Catalog
-              </Link>
-              <nav className="flex gap-4">
-                <Link href="/cards" className="hover:text-gray-700">
-                  Cards
-                </Link>
-                <SignedIn>
-                  <Link href="/dashboard" className="hover:text-gray-700">
-                    Dashboard
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+              <div className="container flex h-14 items-center">
+                <MobileNav />
+                <div className="mr-4 flex">
+                  <Link href="/" className="mr-6 flex items-center space-x-2">
+                    <span className="font-bold text-xl">Pokemon TCG</span>
                   </Link>
-                </SignedIn>
-              </nav>
-            </div>
-            <div className="flex items-center gap-2">
-              <SignedOut>
-                <SignInButton mode="modal">
-                  <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">
-                    Sign In
-                  </button>
-                </SignInButton>
-                <SignUpButton mode="modal">
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
-                    Sign Up
-                  </button>
-                </SignUpButton>
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
-            </div>
-          </header>
-          <main>{children}</main>
+                  <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <Link href="/cards" className="transition-colors hover:text-foreground/80">
+                      Cards
+                    </Link>
+                    <SignedIn>
+                      <Link href="/dashboard" className="transition-colors hover:text-foreground/80">
+                        Dashboard
+                      </Link>
+                    </SignedIn>
+                  </nav>
+                </div>
+                <div className="flex flex-1 items-center justify-end space-x-2">
+                  <ThemeToggle />
+                  <div className="hidden md:flex items-center space-x-2">
+                    <SignedOut>
+                      <SignInButton mode="modal">
+                        <button className="px-4 py-2 text-sm font-medium transition-colors hover:text-foreground/80">
+                          Sign In
+                        </button>
+                      </SignInButton>
+                      <SignUpButton mode="modal">
+                        <button className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-primary/90">
+                          Sign Up
+                        </button>
+                      </SignUpButton>
+                    </SignedOut>
+                    <SignedIn>
+                      <UserButton />
+                    </SignedIn>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <main>{children}</main>
+            <Toaster />
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
