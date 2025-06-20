@@ -238,7 +238,7 @@ NODE_ENV=production
 
 ### 🔗 Important URLs
 - **GitHub**: https://github.com/flowforgelab/Pokemon-catalog-stable
-- **Vercel Deployment**: [Update after deployment]
+- **Vercel Deployment**: https://pokemon-catalog-stable.vercel.app
 - **Neon Database**: Connected via Vercel dashboard
 
 ---
