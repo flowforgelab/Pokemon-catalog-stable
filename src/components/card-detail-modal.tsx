@@ -79,34 +79,26 @@ export function CardDetailModal({ card, open, onOpenChange }: CardDetailModalPro
               </div>
             )}
             
-            {card.abilities && card.abilities.length > 0 && (
+            {card.hp && (
               <div>
-                <h3 className="text-subtitle mb-2">Abilities</h3>
-                <div className="space-y-2">
-                  {card.abilities.map((ability, i) => (
-                    <div key={i} className="bg-secondary/50 p-3 rounded-lg">
-                      <h4 className="font-semibold">{ability.name}</h4>
-                      <p className="text-sm text-muted-foreground">{ability.text}</p>
-                    </div>
-                  ))}
+                <h3 className="text-subtitle mb-2">Stats</h3>
+                <div className="bg-secondary/50 p-3 rounded-lg">
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">HP</span>
+                    <span className="text-2xl font-bold">{card.hp}</span>
+                  </div>
                 </div>
               </div>
             )}
             
-            {card.attacks && card.attacks.length > 0 && (
+            {card.subtypes && card.subtypes.length > 0 && (
               <div>
-                <h3 className="text-subtitle mb-2">Attacks</h3>
-                <div className="space-y-2">
-                  {card.attacks.map((attack, i) => (
-                    <div key={i} className="bg-secondary/50 p-3 rounded-lg">
-                      <div className="flex justify-between items-start">
-                        <h4 className="font-semibold">{attack.name}</h4>
-                        <span className="text-2xl font-bold">{attack.damage || '-'}</span>
-                      </div>
-                      {attack.text && (
-                        <p className="text-sm text-muted-foreground mt-1">{attack.text}</p>
-                      )}
-                    </div>
+                <h3 className="text-subtitle mb-2">Subtypes</h3>
+                <div className="flex gap-2 flex-wrap">
+                  {card.subtypes.map((subtype) => (
+                    <Badge key={subtype} variant="outline">
+                      {subtype}
+                    </Badge>
                   ))}
                 </div>
               </div>
