@@ -5,9 +5,10 @@ import { Input } from "@/components/ui/input";
 import { PokemonCard } from "@/components/pokemon/pokemon-card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
+import { Card, CardsResponse } from "@/lib/types";
 
 export default function CardsPage() {
-  const [cards, setCards] = useState<any[]>([]);
+  const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [page, setPage] = useState(1);
@@ -24,7 +25,7 @@ export default function CardsPage() {
         });
         
         const response = await fetch(`/api/cards?${params}`);
-        const data = await response.json();
+        const data: CardsResponse = await response.json();
         
         setCards(data.cards || []);
         setTotalPages(data.pagination?.totalPages || 1);

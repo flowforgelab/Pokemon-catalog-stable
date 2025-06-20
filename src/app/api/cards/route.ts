@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { CardsResponse } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -41,7 +42,7 @@ export async function GET(request: NextRequest) {
       prisma.card.count({ where }),
     ]);
 
-    return NextResponse.json({
+    const response: CardsResponse = {
       cards,
       pagination: {
         page,
@@ -49,7 +50,9 @@ export async function GET(request: NextRequest) {
         total,
         totalPages: Math.ceil(total / limit),
       },
-    });
+    };
+    
+    return NextResponse.json(response);
   } catch (error) {
     console.error('Error fetching cards:', error);
     return NextResponse.json(
