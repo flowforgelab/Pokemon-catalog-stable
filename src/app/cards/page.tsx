@@ -8,6 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardsResponse } from "@/lib/types/index";
 import { CardsFilter } from "@/components/cards-filter";
+import { MobileFilterSheet } from "@/components/mobile-filter-sheet";
 import { useDebounce } from "@/lib/hooks/use-debounce";
 
 export default function CardsPage() {
@@ -95,13 +96,16 @@ export default function CardsPage() {
     <div className="container mx-auto p-4">
       <div className="mb-8">
         <h1 className="text-3xl font-bold mb-4">Pokemon Cards</h1>
-        <Input
-          type="search"
-          placeholder="Search cards..."
-          value={searchTerm}
-          onChange={handleSearch}
-          className="max-w-md"
-        />
+        <div className="flex gap-4 items-center">
+          <Input
+            type="search"
+            placeholder="Search cards..."
+            value={searchTerm}
+            onChange={handleSearch}
+            className="max-w-md"
+          />
+          <MobileFilterSheet />
+        </div>
       </div>
       
       <div className="flex gap-6">
