@@ -11,6 +11,7 @@ import { MobileFilterSheet } from "@/components/mobile-filter-sheet";
 import { SkeletonCard } from "@/components/ui/skeleton-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ErrorState } from "@/components/ui/error-state";
+import { CardDetailModal } from "@/components/card-detail-modal";
 import { useDebounce } from "@/lib/hooks/use-debounce";
 import { Search } from "lucide-react";
 
@@ -22,6 +23,8 @@ export default function CardsPage() {
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || "");
   const [totalPages, setTotalPages] = useState(1);
+  const [selectedCard, setSelectedCard] = useState<Card | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
   
   const page = parseInt(searchParams.get('page') || '1');
   const debouncedSearch = useDebounce(searchTerm, 300);
@@ -81,6 +84,11 @@ export default function CardsPage() {
     params.set('page', newPage.toString());
     router.push(`/cards?${params.toString()}`);
   };
+  
+  const handleCardClick = (card: Card) => {
+    setSelectedCard(card);
+    setModalOpen(true);
+  };
 
   if (loading && cards.length === 0) {
     return (
@@ -136,6 +144,7 @@ export default function CardsPage() {
                 rarity={card.rarity || undefined}
                 price={card.marketPrice || undefined}
                 tcgplayerUrl={card.tcgplayerUrl || undefined}
+                onClick={() => handleCardClick(card)}
               />
             ))}
           </div>
@@ -179,6 +188,12 @@ export default function CardsPage() {
           )}
         </div>
       </div>
+      
+      <CardDetailModal 
+        card={selectedCard} 
+        open={modalOpen} 
+        onOpenChange={setModalOpen} 
+      />
     </div>
   );
 }
