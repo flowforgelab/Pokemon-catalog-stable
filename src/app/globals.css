@@ -254,6 +254,80 @@
   .interactive {
     @apply focus-ring hover-glow active:scale-[0.98] transition-all duration-fast;
   }
+  
+  /* Elevation system */
+  .elevation-none { box-shadow: none; }
+  .elevation-xs { box-shadow: var(--shadow-xs); }
+  .elevation-sm { box-shadow: var(--shadow-sm); }
+  .elevation-md { box-shadow: var(--shadow-default); }
+  .elevation-lg { box-shadow: var(--shadow-md); }
+  .elevation-xl { box-shadow: var(--shadow-lg); }
+  .elevation-2xl { box-shadow: var(--shadow-xl); }
+  
+  /* Card elevations */
+  .card-flat { @apply elevation-none; }
+  .card-raised { @apply elevation-sm hover:elevation-md transition-shadow duration-base; }
+  .card-floating { @apply elevation-md hover:elevation-lg transition-shadow duration-base; }
+  .card-lifted { @apply elevation-lg hover:elevation-xl transition-shadow duration-base; }
+  
+  /* Page animations */
+  .animate-in {
+    animation: fadeIn var(--transition-base) ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp var(--transition-slow) ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn var(--transition-fast) ease-out;
+  }
+  
+  /* Stagger children animations */
+  .stagger-children > * {
+    animation: slideUp var(--transition-slow) ease-out backwards;
+  }
+  
+  .stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger-children > *:nth-child(2) { animation-delay: 50ms; }
+  .stagger-children > *:nth-child(3) { animation-delay: 100ms; }
+  .stagger-children > *:nth-child(4) { animation-delay: 150ms; }
+  .stagger-children > *:nth-child(5) { animation-delay: 200ms; }
+  .stagger-children > *:nth-child(6) { animation-delay: 250ms; }
+  
+  /* Typography utilities */
+  .text-display {
+    @apply text-5xl font-bold tracking-tight leading-tight;
+  }
+  
+  .text-headline {
+    @apply text-4xl font-bold tracking-tight leading-tight;
+  }
+  
+  .text-title {
+    @apply text-2xl font-semibold leading-snug;
+  }
+  
+  .text-subtitle {
+    @apply text-lg font-medium leading-relaxed;
+  }
+  
+  .text-body {
+    @apply text-base leading-relaxed;
+  }
+  
+  .text-caption {
+    @apply text-sm text-muted-foreground leading-normal;
+  }
+  
+  /* Text gradients */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-fire {
+    @apply bg-gradient-to-r from-pokemon-fire to-pokemon-electric bg-clip-text text-transparent;
+  }
 }
 
 /* Pokemon Type Utilities */

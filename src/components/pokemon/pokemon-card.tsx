@@ -52,8 +52,8 @@ const PokemonCard = React.memo(function PokemonCard({
   return (
     <Card 
       className={cn(
-        "overflow-hidden transition-all hover:shadow-lg cursor-pointer",
-        onClick && "hover:scale-105",
+        "overflow-hidden cursor-pointer card-raised",
+        onClick && "hover-lift",
         className
       )}
       onClick={onClick}

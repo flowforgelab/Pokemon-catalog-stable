@@ -103,8 +103,8 @@ export default function CardsPage() {
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="mb-8">
+    <div className="container mx-auto p-4 animate-in">
+      <div className="mb-8 animate-slide-up">
         <h1 className="text-3xl font-bold mb-4">Pokemon Cards</h1>
         <div className="flex gap-4 items-center">
           <Input
@@ -124,7 +124,7 @@ export default function CardsPage() {
         </aside>
         
         <div className="flex-1">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 stagger-children">
             {cards.map((card) => (
               <PokemonCard 
                 key={card.id} 

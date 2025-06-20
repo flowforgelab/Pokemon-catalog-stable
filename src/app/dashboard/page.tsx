@@ -10,24 +10,24 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
-      <p className="text-lg mb-4">Welcome to your Pokemon TCG Dashboard!</p>
+    <div className="container mx-auto p-4 animate-in">
+      <h1 className="text-headline mb-4">Dashboard</h1>
+      <p className="text-subtitle mb-4">Welcome to your Pokemon TCG Dashboard!</p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <Link href="/cards" className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h2 className="text-xl font-semibold mb-2">Browse Cards</h2>
-          <p className="text-muted-foreground">Explore Pokemon cards</p>
+        <Link href="/cards" className="bg-card p-6 rounded-lg card-raised interactive">
+          <h2 className="text-title mb-2">Browse Cards</h2>
+          <p className="text-caption">Explore Pokemon cards</p>
         </Link>
         
-        <Link href="/collection" className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h2 className="text-xl font-semibold mb-2">My Collection</h2>
-          <p className="text-muted-foreground">Track your Pokemon cards</p>
+        <Link href="/collection" className="bg-card p-6 rounded-lg card-raised interactive">
+          <h2 className="text-title mb-2">My Collection</h2>
+          <p className="text-caption">Track your Pokemon cards</p>
         </Link>
         
-        <Link href="/decks" className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h2 className="text-xl font-semibold mb-2">Deck Builder</h2>
-          <p className="text-muted-foreground">Build competitive decks</p>
+        <Link href="/decks" className="bg-card p-6 rounded-lg card-raised interactive">
+          <h2 className="text-title mb-2">Deck Builder</h2>
+          <p className="text-caption">Build competitive decks</p>
         </Link>
       </div>
       
