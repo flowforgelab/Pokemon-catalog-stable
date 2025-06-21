@@ -413,7 +413,7 @@ export default function PublicDeckPage() {
       <DeckImportExport
         open={showExport}
         onOpenChange={setShowExport}
-        cards={deck.cards}
+        cards={deck.cards as any}
         deckName={deck.name}
         onImport={() => {}} // Read-only for public view
       />
