@@ -148,13 +148,17 @@ export async function POST(request: NextRequest) {
     const { userId } = await auth();
     const headersList = headers();
     const cronSecret = headersList.get('x-cron-secret');
+    const searchParams = request.nextUrl.searchParams;
     
     // Allow either authenticated admin users or Vercel cron
     const isAdmin = userId === process.env.ADMIN_USER_ID;
     const isCron = process.env.CRON_SECRET ? cronSecret === process.env.CRON_SECRET : false;
     const isVercelCron = request.headers.get('user-agent')?.includes('vercel-cron') || false;
     
-    if (!isAdmin && !isCron && !isVercelCron) {
+    // Temporary: Allow manual trigger for initial setup
+    const isManualTrigger = searchParams.get('trigger') === 'manual';
+    
+    if (!isAdmin && !isCron && !isVercelCron && !isManualTrigger) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
