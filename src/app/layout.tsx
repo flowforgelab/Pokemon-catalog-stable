@@ -51,6 +51,9 @@ export default function RootLayout({
                     <Link href="/deck-analyzer" className="transition-colors hover:text-foreground/80">
                       AI Analyzer
                     </Link>
+                    <Link href="/budget-builder" className="transition-colors hover:text-foreground/80">
+                      Budget Builder
+                    </Link>
                     <SignedIn>
                       <Link href="/dashboard" className="transition-colors hover:text-foreground/80">
                         Dashboard

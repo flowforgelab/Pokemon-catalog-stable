@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { AlertCircle, Sparkles, TrendingUp, Shield, Zap, Target } from "lucide-react"
+import { AlertCircle, Sparkles, TrendingUp, Shield, Zap, Target, DollarSign } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { Progress } from "@/components/ui/progress"
 
@@ -17,6 +17,9 @@ export default function DeckAnalyzerPage() {
   const [format, setFormat] = useState("STANDARD")
   const [analyzing, setAnalyzing] = useState(false)
   const [analysis, setAnalysis] = useState<any>(null)
+  const [deckId, setDeckId] = useState<string | null>(null)
+  const [budget, setBudget] = useState<string>("")
+  const [budgetAnalysis, setBudgetAnalysis] = useState<any>(null)
   const { toast } = useToast()
 
   const handleAnalyze = async () => {
@@ -58,6 +61,7 @@ export default function DeckAnalyzerPage() {
       const analysisData = await analysisResponse.json()
       
       setAnalysis(analysisData)
+      setDeckId(deck.id)
       toast({
         title: "Analysis Complete!",
         description: "Your deck has been analyzed successfully"
@@ -251,6 +255,85 @@ export default function DeckAnalyzerPage() {
                   ))}
                 </ul>
               </Card>
+
+              {/* Budget Optimization */}
+              {deckId && (
+                <Card className="p-4">
+                  <h4 className="font-medium mb-3 flex items-center gap-2">
+                    <DollarSign className="h-4 w-4" />
+                    Budget Optimization
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex gap-2">
+                      <Input
+                        type="number"
+                        placeholder="Target budget ($)"
+                        value={budget}
+                        onChange={(e) => setBudget(e.target.value)}
+                        className="flex-1"
+                      />
+                      <Button
+                        onClick={async () => {
+                          if (!budget) return;
+                          try {
+                            const res = await fetch(`/api/decks/${deckId}/optimize`, {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ targetBudget: parseFloat(budget) })
+                            });
+                            if (res.ok) {
+                              const data = await res.json();
+                              setBudgetAnalysis(data);
+                            }
+                          } catch (error) {
+                            toast({
+                              title: "Optimization Failed",
+                              description: "Could not generate budget alternatives",
+                              variant: "destructive"
+                            });
+                          }
+                        }}
+                        size="sm"
+                      >
+                        Optimize
+                      </Button>
+                    </div>
+
+                    {budgetAnalysis && (
+                      <div className="space-y-2 text-sm">
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Current Value:</span>
+                          <span className="font-medium">${budgetAnalysis.currentTotal.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Potential Savings:</span>
+                          <span className="font-medium text-green-600">
+                            ${budgetAnalysis.savings.toFixed(2)}
+                          </span>
+                        </div>
+                        {budgetAnalysis.alternatives.length > 0 && (
+                          <div className="mt-3 pt-3 border-t space-y-2">
+                            <p className="text-xs text-muted-foreground">Top Alternatives:</p>
+                            {budgetAnalysis.alternatives.slice(0, 2).map((alt: any, i: number) => (
+                              <div key={i} className="text-xs">
+                                <p className="font-medium">{alt.original.name}</p>
+                                {alt.alternatives[0] && (
+                                  <p className="text-muted-foreground">
+                                    → {alt.alternatives[0].card.name} 
+                                    <span className="text-green-600 ml-1">
+                                      (save ${alt.alternatives[0].priceDiff.toFixed(2)})
+                                    </span>
+                                  </p>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </Card>
+              )}
             </>
           ) : (
             <Card className="p-12 text-center text-muted-foreground">
