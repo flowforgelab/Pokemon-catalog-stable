@@ -76,6 +76,7 @@ export default function DeckBuilderPage() {
   const [description, setDescription] = useState("")
   const [cards, setCards] = useState<DeckCard[]>([])
   const [saving, setSaving] = useState(false)
+  const [loading, setLoading] = useState(false)
   
   // Search state
   const [searchQuery, setSearchQuery] = useState("")
