@@ -1,9 +1,9 @@
-import { Card, DeckCard } from '@/lib/types';
+import { PokemonCard, DeckCard } from '@/lib/types';
 
 interface BudgetAlternative {
-  original: Card;
+  original: PokemonCard;
   alternatives: Array<{
-    card: Card;
+    card: PokemonCard;
     similarity: number;
     priceDiff: number;
     recommendation: string;
@@ -16,7 +16,7 @@ interface BudgetOptimizationResult {
   savings: number;
   alternatives: BudgetAlternative[];
   upgradePath: Array<{
-    card: Card;
+    card: PokemonCard;
     priority: number;
     impact: string;
   }>;
@@ -24,13 +24,13 @@ interface BudgetOptimizationResult {
 }
 
 export class BudgetOptimizer {
-  private cards: (DeckCard & { card: Card })[];
+  private cards: (DeckCard & { card: PokemonCard })[];
 
-  constructor(deckCards: (DeckCard & { card: Card })[]) {
+  constructor(deckCards: (DeckCard & { card: PokemonCard })[]) {
     this.cards = deckCards;
   }
 
-  async optimize(targetBudget: number, allCards: Card[]): Promise<BudgetOptimizationResult> {
+  async optimize(targetBudget: number, allCards: PokemonCard[]): Promise<BudgetOptimizationResult> {
     const currentTotal = this.calculateDeckValue();
     const budgetScore = Math.min(100, Math.round((targetBudget / currentTotal) * 100));
 
@@ -67,8 +67,8 @@ export class BudgetOptimizer {
   }
 
   private async findAlternatives(
-    expensiveCards: (DeckCard & { card: Card })[],
-    allCards: Card[]
+    expensiveCards: (DeckCard & { card: PokemonCard })[],
+    allCards: PokemonCard[]
   ): Promise<BudgetAlternative[]> {
     const alternatives: BudgetAlternative[] = [];
 
@@ -95,7 +95,7 @@ export class BudgetOptimizer {
     return alternatives;
   }
 
-  private findSimilarCards(original: Card, allCards: Card[]): Card[] {
+  private findSimilarCards(original: PokemonCard, allCards: PokemonCard[]): PokemonCard[] {
     return allCards.filter(card => {
       // Don't suggest the same card
       if (card.id === original.id) return false;
@@ -123,7 +123,7 @@ export class BudgetOptimizer {
     });
   }
 
-  private calculateSimilarity(original: Card, alternative: Card): number {
+  private calculateSimilarity(original: PokemonCard, alternative: PokemonCard): number {
     let score = 50; // Base similarity
 
     if (original.supertype === 'Pokémon' && alternative.supertype === 'Pokémon') {
@@ -155,7 +155,7 @@ export class BudgetOptimizer {
     return total / attacks.length;
   }
 
-  private generateRecommendation(original: Card, alternative: Card): string {
+  private generateRecommendation(original: PokemonCard, alternative: PokemonCard): string {
     const priceDiff = (original.marketPrice || 0) - (alternative.marketPrice || 0);
     
     if (original.supertype === 'Pokémon') {
@@ -168,8 +168,8 @@ export class BudgetOptimizer {
     return `Functional alternative, saves $${priceDiff.toFixed(2)}`;
   }
 
-  private generateUpgradePath(): Array<{ card: Card; priority: number; impact: string }> {
-    const upgrades: Array<{ card: Card; priority: number; impact: string }> = [];
+  private generateUpgradePath(): Array<{ card: PokemonCard; priority: number; impact: string }> {
+    const upgrades: Array<{ card: PokemonCard; priority: number; impact: string }> = [];
 
     // Identify key cards worth upgrading
     const trainerCards = this.cards.filter(dc => dc.card.supertype === 'Trainer');
@@ -183,7 +183,7 @@ export class BudgetOptimizer {
 
     if (drawSupportCount < 4) {
       upgrades.push({
-        card: { name: "Professor's Research", marketPrice: 2 } as Card,
+        card: { name: "Professor's Research", marketPrice: 2 } as PokemonCard,
         priority: 1,
         impact: "Essential draw support for consistency"
       });
@@ -193,7 +193,7 @@ export class BudgetOptimizer {
     const hasBoss = trainerCards.some(dc => dc.card.name.toLowerCase().includes('boss'));
     if (!hasBoss) {
       upgrades.push({
-        card: { name: "Boss's Orders", marketPrice: 5 } as Card,
+        card: { name: "Boss's Orders", marketPrice: 5 } as PokemonCard,
         priority: 2,
         impact: "Gust effect for taking key knockouts"
       });

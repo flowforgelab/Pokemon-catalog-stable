@@ -1,4 +1,4 @@
-import { Card, DeckCard } from '@/lib/types';
+import { PokemonCard, DeckCard } from '@/lib/types';
 
 interface DeckAnalysisResult {
   consistencyScore: number;
@@ -24,12 +24,12 @@ interface DeckAnalysisResult {
 }
 
 export class DeckAnalyzer {
-  private cards: (DeckCard & { card: Card })[];
-  private pokemonCards: Card[];
-  private trainerCards: Card[];
-  private energyCards: Card[];
+  private cards: (DeckCard & { card: PokemonCard })[];
+  private pokemonCards: PokemonCard[];
+  private trainerCards: PokemonCard[];
+  private energyCards: PokemonCard[];
 
-  constructor(deckCards: (DeckCard & { card: Card })[]) {
+  constructor(deckCards: (DeckCard & { card: PokemonCard })[]) {
     this.cards = deckCards;
     
     // Categorize cards

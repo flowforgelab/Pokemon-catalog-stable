@@ -1,21 +1,21 @@
-import { Card, Deck, DeckCard } from '@/lib/types';
+import { PokemonCard, Deck, DeckCard } from '@/lib/types';
 
 interface Recommendation {
   type: 'weakness' | 'consistency' | 'tech' | 'upgrade';
   priority: 'high' | 'medium' | 'low';
-  card?: Card;
+  card?: PokemonCard;
   suggestion: string;
   reason: string;
 }
 
 export class DeckRecommender {
-  private deck: (DeckCard & { card: Card })[];
+  private deck: (DeckCard & { card: PokemonCard })[];
 
-  constructor(deckCards: (DeckCard & { card: Card })[]) {
+  constructor(deckCards: (DeckCard & { card: PokemonCard })[]) {
     this.deck = deckCards;
   }
 
-  generateRecommendations(allCards: Card[]): Recommendation[] {
+  generateRecommendations(allCards: PokemonCard[]): Recommendation[] {
     const recommendations: Recommendation[] = [];
 
     // Check weaknesses
@@ -36,7 +36,7 @@ export class DeckRecommender {
     });
   }
 
-  private checkWeaknesses(allCards: Card[]): Recommendation[] {
+  private checkWeaknesses(allCards: PokemonCard[]): Recommendation[] {
     const recs: Recommendation[] = [];
     
     // Find common weaknesses

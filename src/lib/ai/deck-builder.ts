@@ -1,15 +1,15 @@
-import { Card } from '@/lib/types';
+import { PokemonCard } from '@/lib/types';
 
 interface DeckSkeleton {
   strategy: string;
-  core: Card[];
-  support: Card[];
+  core: PokemonCard[];
+  support: PokemonCard[];
   trainers: string[];
   energy: string[];
 }
 
 export class DeckBuilder {
-  buildAround(card: Card, allCards: Card[]): DeckSkeleton {
+  buildAround(card: PokemonCard, allCards: PokemonCard[]): DeckSkeleton {
     // Determine strategy based on card type
     const strategy = this.determineStrategy(card);
     
@@ -31,14 +31,14 @@ export class DeckBuilder {
     };
   }
 
-  private determineStrategy(card: Card): string {
+  private determineStrategy(card: PokemonCard): string {
     if (card.hp && parseInt(card.hp) >= 300) return 'TANK';
     if (card.attacks?.some(a => a.damage && parseInt(a.damage) >= 200)) return 'AGGRO';
     if (card.abilities?.length) return 'ENGINE';
     return 'MIDRANGE';
   }
 
-  private findSynergies(card: Card, allCards: Card[]): Card[] {
+  private findSynergies(card: PokemonCard, allCards: PokemonCard[]): PokemonCard[] {
     return allCards
       .filter(c => {
         // Same type synergy
@@ -81,7 +81,7 @@ export class DeckBuilder {
     }
   }
 
-  private getEnergyPackage(card: Card): string[] {
+  private getEnergyPackage(card: PokemonCard): string[] {
     const primaryType = card.types[0] || 'Colorless';
     const totalEnergy = 12;
     
