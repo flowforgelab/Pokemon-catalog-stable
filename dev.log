@@ -465,3 +465,15 @@ Module not found: Can't resolve '@/components/ui/avatar'
 [0m [90m 9 |[39m[0m
 
 https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./src/components/ui/avatar.tsx:4:1
+Module not found: Can't resolve '@radix-ui/react-avatar'
+[0m [90m 2 |[39m[0m
+[0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mAvatarPrimitive[39m [36mfrom[39m [32m"@radix-ui/react-avatar"[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m[0m
+[0m [90m 6 |[39m [36mimport[39m { cn } [36mfrom[39m [32m"@/lib/utils"[39m[0m
+[0m [90m 7 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled in 202ms (1511 modules)
