@@ -243,7 +243,7 @@ export default function DeckAnalyzerPage() {
                 </Card>
               </div>
 
-              {/* Recommendations */}
+              {/* AI Recommendations */}
               <Card className="p-4 bg-primary/5 border-primary/20">
                 <h4 className="font-medium mb-2">AI Recommendations</h4>
                 <ul className="space-y-1 text-sm">
@@ -255,6 +255,18 @@ export default function DeckAnalyzerPage() {
                   ))}
                 </ul>
               </Card>
+
+              {/* Strategy Guide */}
+              {analysis.strategyGuide && (
+                <Card className="p-4">
+                  <h4 className="font-medium mb-2">Strategy Guide</h4>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    {analysis.strategyGuide.map((guide: string, i: number) => (
+                      <p key={i}>{guide}</p>
+                    ))}
+                  </div>
+                </Card>
+              )}
 
               {/* Budget Optimization */}
               {deckId && (

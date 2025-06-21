@@ -34,6 +34,9 @@ export function MobileNav() {
           <Link href="/budget-builder" onClick={() => setOpen(false)} className="text-sm font-medium">
             Budget Builder
           </Link>
+          <Link href="/build-around" onClick={() => setOpen(false)} className="text-sm font-medium">
+            Build Around
+          </Link>
           <SignedIn>
             <Link href="/dashboard" onClick={() => setOpen(false)} className="text-sm font-medium">
               Dashboard

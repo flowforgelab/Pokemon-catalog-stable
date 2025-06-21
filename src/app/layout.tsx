@@ -54,6 +54,9 @@ export default function RootLayout({
                     <Link href="/budget-builder" className="transition-colors hover:text-foreground/80">
                       Budget Builder
                     </Link>
+                    <Link href="/build-around" className="transition-colors hover:text-foreground/80">
+                      Build Around
+                    </Link>
                     <SignedIn>
                       <Link href="/dashboard" className="transition-colors hover:text-foreground/80">
                         Dashboard
