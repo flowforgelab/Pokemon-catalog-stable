@@ -449,3 +449,19 @@ TypeError: Cannot read properties of null (reading 'useContext')
  ✓ Compiled in 94ms (742 modules)
  ✓ Compiled in 92ms (742 modules)
  ✓ Compiled in 83ms (742 modules)
+ ✓ Compiled in 240ms (742 modules)
+ ✓ Compiled in 145ms (742 modules)
+ ✓ Compiled in 351ms (1666 modules)
+ ✓ Compiled in 228ms (1498 modules)
+ ✓ Compiled in 326ms (1500 modules)
+ ⨯ ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/avatar'
+[0m [90m 4 |[39m [36mimport[39m { [33mCard[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mAvatar[39m[33m,[39m [33mAvatarFallback[39m[33m,[39m [33mAvatarImage[39m } [36mfrom[39m [32m"@/components/ui/avatar"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m { [33mPackage[39m[33m,[39m [33mLayers[39m[33m,[39m [33mTrophy[39m[33m,[39m [33mSettings[39m[33m,[39m [33mUser[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m"@/lib/prisma"[39m[33m;[39m[0m
+[0m [90m 9 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
