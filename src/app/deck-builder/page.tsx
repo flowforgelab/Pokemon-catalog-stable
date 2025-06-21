@@ -631,7 +631,7 @@ export default function DeckBuilderPage() {
       <DeckImportExport
         open={importExportOpen}
         onOpenChange={setImportExportOpen}
-        cards={cards}
+        cards={cards as any}
         deckName={deckName}
         onImport={handleImport}
       />
