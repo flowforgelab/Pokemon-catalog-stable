@@ -1,0 +1,853 @@
+🚀 Daily Game Data Import
+========================
+Date: 2025-06-21T14:56:58.962Z
+API Key: 254305f1...
+Daily Limit: 950 requests
+
+Found 1000 cards needing game data
+Previously processed: 0 cards
+
+✅ xy1-130: Double Colorless Energy
+✅ xy1-131: Rainbow Energy
+✅ xy1-132: Grass Energy
+✅ xy1-133: Fire Energy
+✅ xy1-134: Water Energy
+✅ xy1-135: Lightning Energy
+✅ xy1-136: Psychic Energy
+✅ xy1-137: Fighting Energy
+✅ xy1-138: Darkness Energy
+✅ xy1-139: Metal Energy
+✅ xy1-140: Fairy Energy
+✅ swsh4-162: Aromatic Grass Energy
+✅ swsh4-163: Coating Metal Energy
+✅ swsh4-164: Stone Fighting Energy
+✅ swsh4-165: Wash Water Energy
+✅ ex10-96: Darkness Energy
+✅ ex10-97: Metal Energy
+✅ ex10-98: Boost Energy
+✅ ex10-99: Cyclone Energy
+✅ sm11-212: Recycle Energy
+✅ sm11-213: Weakness Guard Energy
+✅ sm11-257: Recycle Energy
+✅ sm11-258: Weakness Guard Energy
+✅ sm10-190: Triple Acceleration Energy
+✅ sm10-234: Triple Acceleration Energy
+✅ sm5-136: Super Boost Energy ◇
+✅ sm5-137: Unit Energy GrassFireWater
+✅ sm5-138: Unit Energy LightningPsychicMetal
+✅ sm5-170: Unit Energy GrassFireWater
+✅ sm5-171: Unit Energy LightningPsychicMetal
+✅ sv6-166: Boomerang Energy
+✅ sv6-167: Legacy Energy
+✅ sv6-226: Luminous Energy
+✅ sv5-161: Mist Energy
+✅ sv5-162: Neo Upper Energy
+✅ ex7-94: Dark Metal Energy
+✅ ex7-95: R Energy
+✅ base5-17: Rainbow Energy
+✅ base5-80: Rainbow Energy
+✅ base5-81: Full Heal Energy
+✅ base5-82: Potion Energy
+✅ ex4-86: Aqua Energy
+✅ ex4-87: Magma Energy
+✅ ex4-88: Double Rainbow Energy
+✅ swsh1-186: Aurora Energy
+✅ sv8-191: Enriching Energy
+✅ sv8-252: Jet Energy
+✅ sm1-136: Double Colorless Energy
+✅ sm1-137: Rainbow Energy
+
+Progress: 50/950 requests
+Success: 49 | Failed: 0 | Skipped: 0
+Rate: 53 cards/min
+✅ sm1-162: Psychic Energy
+✅ sm1-163: Metal Energy
+✅ sm1-164: Grass Energy
+✅ sm1-165: Fire Energy
+✅ sm1-166: Water Energy
+✅ sm1-167: Lightning Energy
+✅ sm1-168: Psychic Energy
+✅ sm1-169: Fighting Energy
+✅ sm1-170: Darkness Energy
+✅ sm1-171: Metal Energy
+✅ sm1-172: Fairy Energy
+✅ dp7-95: Warp Energy
+✅ ecard3-142: Bounce Energy
+✅ ecard3-143: Cyclone Energy
+✅ ecard3-144: Retro Energy
+✅ swsh12-168: Regenerative Energy
+✅ swsh12-169: V Guard Energy
+✅ swsh12-215: V Guard Energy
+✅ sv6pt5-98: Basic Darkness Energy
+✅ sv6pt5-99: Basic Metal Energy
+✅ sm35-69: Double Colorless Energy
+✅ sm35-70: Warp Energy
+✅ dp3-129: Darkness Energy
+✅ dp3-130: Metal Energy
+✅ sve-1: Basic Grass Energy
+✅ sve-10: Basic Fire Energy
+✅ sve-11: Basic Water Energy
+✅ sve-12: Basic Lightning Energy
+✅ sve-13: Basic Psychic Energy
+✅ sve-14: Basic Fighting Energy
+✅ sve-15: Basic Darkness Energy
+✅ sve-16: Basic Metal Energy
+✅ sve-2: Basic Fire Energy
+✅ sve-3: Basic Water Energy
+✅ sve-4: Basic Lightning Energy
+✅ sve-5: Basic Psychic Energy
+✅ sve-6: Basic Fighting Energy
+✅ sve-7: Basic Darkness Energy
+✅ sve-8: Basic Metal Energy
+✅ sve-9: Basic Grass Energy
+✅ sv1-257: Basic Lightning Energy
+✅ sv1-258: Basic Fighting Energy
+✅ ex1-104: Grass Energy
+✅ ex1-105: Fighting Energy
+✅ ex1-106: Water Energy
+✅ ex1-107: Psychic Energy
+✅ ex1-108: Fire Energy
+✅ ex1-109: Lightning Energy
+✅ ex1-94: Metal Energy
+✅ ex1-95: Rainbow Energy
+
+Progress: 100/950 requests
+Success: 99 | Failed: 0 | Skipped: 0
+Rate: 58 cards/min
+✅ pl2-100: Metal Energy
+✅ pl2-101: SP Energy
+✅ pl2-99: Darkness Energy
+✅ swsh2-171: Capture Energy
+✅ swsh2-172: Horror Psychic Energy
+✅ swsh2-173: Speed Lightning Energy
+✅ swsh2-174: Twin Energy
+✅ swsh2-209: Twin Energy
+✅ xy5-143: Shield Energy
+✅ xy5-144: Wonder Energy
+✅ ex16-103: Grass Energy
+✅ ex16-107: Psychic Energy
+✅ ex16-108: Fighting Energy
+✅ ex16-87: Darkness Energy
+✅ ex16-88: Metal Energy
+✅ ex16-89: Multi Energy
+✅ ex16-90: Cyclone Energy
+✅ ex16-91: Warp Energy
+✅ pl1-121: Rainbow Energy
+✅ bw8-127: Plasma Energy
+✅ bw9-106: Plasma Energy
+✅ bw10-91: Plasma Energy
+✅ xy4-111: Double Colorless Energy
+✅ xy4-112: Mystery Energy
+✅ sv4-182: Medical Energy
+✅ sv4-266: Reversal Energy
+✅ sv2-190: Jet Energy
+✅ sv2-191: Luminous Energy
+✅ sv2-192: Reversal Energy
+✅ sv2-193: Therapeutic Energy
+✅ sv2-278: Basic Grass Energy
+✅ sv2-279: Basic Water Energy
+✅ pop5-4: Double Rainbow Energy
+✅ pop5-8: Boost Energy
+✅ pop5-9: δ Rainbow Energy
+✅ pop4-10: Scramble Energy
+✅ pop4-8: Heal Energy
+✅ sv3-230: Basic Fire Energy
+✅ bw4-92: Double Colorless Energy
+✅ bw4-93: Prism Energy
+✅ neo1-104: Darkness Energy
+✅ neo1-105: Recycle Energy
+✅ neo1-106: Fighting Energy
+✅ neo1-107: Fire Energy
+✅ neo1-108: Grass Energy
+✅ neo1-109: Lightning Energy
+✅ neo1-110: Psychic Energy
+✅ neo1-19: Metal Energy
+✅ neo4-16: Miracle Energy
+✅ dp2-118: Multi Energy
+
+Progress: 150/950 requests
+Success: 149 | Failed: 0 | Skipped: 0
+Rate: 59 cards/min
+✅ dp2-119: Darkness Energy
+✅ dp2-120: Metal Energy
+✅ dp5-92: Call Energy
+✅ dp5-93: Darkness Energy
+✅ dp5-94: Health Energy
+✅ dp5-95: Metal Energy
+✅ dp5-96: Recover Energy
+✅ sm8-194: Memory Energy
+✅ swsh11-171: Gift Energy
+✅ base6-100: Full Heal Energy
+✅ base6-101: Potion Energy
+✅ ex12-81: Rainbow Energy
+✅ ex12-82: React Energy
+✅ sv9-159: Spiky Energy
+✅ sv9-190: Spiky Energy
+✅ ex13-106: Fire Energy
+✅ ex13-107: Water Energy
+✅ ex13-110: Fighting Energy
+✅ ex13-94: Darkness Energy
+✅ ex13-95: Metal Energy
+✅ ex13-96: Multi Energy
+✅ ex13-97: Dark Metal Energy
+✅ ex13-98: δ Rainbow Energy
+✅ hgss1-103: Double Colorless Energy
+✅ hgss1-104: Rainbow Energy
+✅ hgss1-115: Grass Energy
+✅ hgss1-116: Fire Energy
+✅ hgss1-117: Water Energy
+✅ hgss1-121: Darkness Energy
+✅ hgss1-122: Metal Energy
+✅ hgss3-79: Darkness Energy
+✅ hgss3-80: Metal Energy
+✅ hgss4-90: Rescue Energy
+✅ gym1-128: Fire Energy
+✅ gym1-129: Grass Energy
+❌ Failed gym1-130: HTTP 404
+❌ gym1-130: Lightning Energy - No data
+❌ Failed gym1-131: HTTP 404
+❌ gym1-131: Psychic Energy - No data
+❌ Failed gym1-132: HTTP 404
+❌ gym1-132: Water Energy - No data
+❌ Failed gym2-127: HTTP 404
+❌ gym2-127: Fighting Energy - No data
+❌ Failed gym2-128: HTTP 404
+❌ gym2-128: Fire Energy - No data
+❌ Failed gym2-129: HTTP 404
+❌ gym2-129: Grass Energy - No data
+❌ Failed gym2-130: HTTP 404
+❌ gym2-130: Lightning Energy - No data
+❌ Failed gym2-131: HTTP 404
+❌ gym2-131: Psychic Energy - No data
+❌ Failed gym2-132: HTTP 404
+❌ gym2-132: Water Energy - No data
+❌ Failed sm2-166: HTTP 404
+❌ sm2-166: Double Colorless Energy - No data
+❌ Failed sm2-167: HTTP 404
+❌ sm2-167: Grass Energy - No data
+❌ Failed sm2-168: HTTP 404
+❌ sm2-168: Lightning Energy - No data
+❌ Failed sm2-169: HTTP 404
+❌ sm2-169: Fighting Energy - No data
+❌ Failed g1-74: HTTP 404
+❌ g1-74: Double Colorless Energy - No data
+❌ Failed g1-75: HTTP 404
+❌ g1-75: Grass Energy - No data
+
+Progress: 200/950 requests
+Success: 184 | Failed: 15 | Skipped: 0
+Rate: 61 cards/min
+❌ Failed g1-76: HTTP 404
+❌ g1-76: Fire Energy - No data
+❌ Failed g1-77: HTTP 404
+❌ g1-77: Water Energy - No data
+❌ Failed g1-78: HTTP 404
+❌ g1-78: Lightning Energy - No data
+❌ Failed g1-79: HTTP 404
+❌ g1-79: Psychic Energy - No data
+❌ Failed g1-80: HTTP 404
+❌ g1-80: Fighting Energy - No data
+❌ Failed g1-81: HTTP 404
+❌ g1-81: Darkness Energy - No data
+❌ Failed g1-82: HTTP 404
+❌ g1-82: Metal Energy - No data
+❌ Failed g1-83: HTTP 404
+❌ g1-83: Fairy Energy - No data
+❌ Failed swsh8-244: HTTP 404
+❌ swsh8-244: Fusion Strike Energy - No data
+❌ Failed swsh8-283: HTTP 404
+❌ swsh8-283: Grass Energy - No data
+❌ Failed swsh8-284: HTTP 404
+❌ swsh8-284: Fire Energy - No data
+✅ xy3-103: Herbal Energy
+✅ xy3-104: Strong Energy
+✅ sm6-117: Beast Energy ◇
+✅ sm6-118: Unit Energy FightingDarknessFairy
+✅ sm6-146: Unit Energy FightingDarknessFairy
+✅ ex6-103: Multi Energy
+✅ xy10-114: Double Colorless Energy
+✅ xy10-115: Strong Energy
+✅ ecard1-158: Darkness Energy
+✅ ecard1-159: Metal Energy
+✅ ecard1-160: Fighting Energy
+✅ ecard1-161: Fire Energy
+✅ ecard1-162: Grass Energy
+✅ ecard1-163: Lightning Energy
+✅ ecard1-164: Psychic Energy
+✅ ecard1-165: Water Energy
+✅ swsh7-165: Treasure Energy
+✅ swsh7-235: Lightning Energy
+✅ swsh7-236: Darkness Energy
+✅ swsh7-237: Metal Energy
+✅ xy12-90: Double Colorless Energy
+✅ xy12-91: Grass Energy
+✅ xy12-92: Fire Energy
+✅ xy12-93: Water Energy
+✅ xy12-94: Lightning Energy
+✅ xy12-95: Psychic Energy
+✅ xy12-96: Fighting Energy
+✅ ex9-101: Grass Energy
+✅ ex9-102: Fire Energy
+✅ ex9-103: Water Energy
+✅ ex9-104: Lightning Energy
+✅ ex9-105: Psychic Energy
+✅ ex9-106: Fighting Energy
+✅ ex9-86: Darkness Energy
+✅ ex9-87: Double Rainbow Energy
+✅ ex9-88: Metal Energy
+✅ ex9-89: Multi Energy
+✅ tk1b-10: Lightning Energy
+✅ tk1a-10: Fire Energy
+
+Progress: 250/950 requests
+Success: 223 | Failed: 26 | Skipped: 0
+Rate: 62 cards/min
+✅ tk2a-11: Lightning Energy
+✅ tk2a-12: Psychic Energy
+✅ tk2b-11: Fire Energy
+✅ tk2b-12: Lightning Energy
+✅ bw6-117: Blend Energy GrassFirePsychicDarkness
+✅ bw6-118: Blend Energy WaterLightningFightingMetal
+✅ ex15-84: Holon Energy FF
+✅ ex15-85: Holon Energy GL
+✅ ex15-86: Holon Energy WP
+✅ ex15-87: Boost Energy
+✅ ex15-88: δ Rainbow Energy
+✅ ex15-89: Scramble Energy
+✅ dc1-33: Double Aqua Energy
+✅ dc1-34: Double Magma Energy
+✅ dp1-123: Grass Energy
+✅ dp1-124: Fire Energy
+✅ dp1-125: Water Energy
+✅ dp1-126: Lightning Energy
+✅ dp1-127: Psychic Energy
+✅ dp1-128: Fighting Energy
+✅ dp1-129: Darkness Energy
+✅ dp1-130: Metal Energy
+✅ sv10-182: Team Rocket's Energy
+✅ ex8-93: Boost Energy
+✅ ex8-94: Heal Energy
+✅ ex8-95: Scramble Energy
+✅ ex11-103: Darkness Energy
+✅ ex11-104: Holon Energy FF
+✅ ex11-105: Holon Energy GL
+✅ ex11-106: Holon Energy WP
+✅ ex11-107: Metal Energy
+✅ swsh3-174: Heat Fire Energy
+✅ swsh3-175: Hiding Darkness Energy
+✅ swsh3-176: Powerful Colorless Energy
+✅ swsh3-201: Capture Energy
+✅ ex14-88: Double Rainbow Energy
+✅ swsh12pt5-152: Grass Energy
+✅ swsh12pt5-153: Fire Energy
+✅ swsh12pt5-154: Water Energy
+✅ swsh12pt5-155: Lightning Energy
+✅ swsh12pt5-156: Psychic Energy
+✅ swsh12pt5-157: Fighting Energy
+✅ swsh12pt5-158: Darkness Energy
+✅ swsh12pt5-159: Metal Energy
+✅ sm4-100: Counter Energy
+✅ sm4-122: Counter Energy
+✅ sm4-123: Warp Energy
+✅ sm4-124: Water Energy
+✅ sm12-209: Draw Energy
+✅ sm12-271: Draw Energy
+
+Progress: 300/950 requests
+Success: 273 | Failed: 26 | Skipped: 0
+Rate: 62 cards/min
+✅ swsh6-157: Impact Energy
+✅ swsh6-158: Lucky Energy
+✅ swsh6-159: Spiral Energy
+✅ swsh6-231: Water Energy
+✅ swsh6-232: Psychic Energy
+✅ swsh6-233: Fighting Energy
+✅ sm7-151: Rainbow Energy
+✅ sm7-183: Rainbow Energy
+✅ col1-86: Darkness Energy
+✅ col1-87: Metal Energy
+✅ col1-88: Grass Energy
+✅ col1-89: Fire Energy
+✅ col1-90: Water Energy
+✅ col1-91: Lightning Energy
+✅ col1-92: Psychic Energy
+✅ col1-94: Darkness Energy
+✅ col1-95: Metal Energy
+✅ sm3-167: Fire Energy
+✅ sm3-168: Darkness Energy
+✅ sm3-169: Fairy Energy
+✅ swsh9-151: Double Turbo Energy
+✅ bw1-105: Grass Energy
+✅ bw1-106: Fire Energy
+✅ bw1-107: Water Energy
+✅ swsh5-140: Rapid Strike Energy
+✅ swsh5-141: Single Strike Energy
+✅ swsh5-182: Rapid Strike Energy
+✅ swsh5-183: Single Strike Energy
+✅ base4-124: Double Colorless Energy
+✅ base4-125: Fighting Energy
+✅ base4-126: Fire Energy
+✅ base4-127: Grass Energy
+✅ base4-128: Lightning Energy
+✅ base4-129: Psychic Energy
+✅ base4-130: Water Energy
+✅ base1-100: Lightning Energy
+✅ base1-101: Psychic Energy
+✅ base1-96: Double Colorless Energy
+✅ base1-98: Fire Energy
+✅ base1-99: Grass Energy
+✅ xy8-152: Rainbow Energy
+✅ xy9-113: Splash Energy
+✅ swsh10-216: Double Turbo Energy
+✅ ecard2-142: Darkness Energy
+✅ ecard2-143: Metal Energy
+✅ ecard2-144: Rainbow Energy
+✅ ecard2-145: Boost Energy
+✅ ecard2-146: Crystal Energy
+✅ ecard2-147: Warp Energy
+✅ xy7-82: Dangerous Energy
+
+Progress: 350/950 requests
+Success: 323 | Failed: 26 | Skipped: 0
+Rate: 60 cards/min
+✅ xy7-83: Flash Energy
+✅ sv3pt5-207: Basic Psychic Energy
+✅ xyp-XY01: Chespin
+✅ xyp-XY02: Fennekin
+✅ xyp-XY03: Froakie
+✅ xyp-XY04: Sylveon
+✅ xyp-XY05: Xerneas
+✅ xyp-XY06: Yveltal
+✅ xyp-XY07: Xerneas-EX
+✅ xyp-XY08: Yveltal-EX
+✅ xyp-XY09: Garchomp-EX
+✅ xyp-XY10: Dragalge
+✅ xyp-XY100: Mewtwo
+✅ xyp-XY101: Mewtwo
+✅ xyp-XY106: Gyarados-EX
+✅ xyp-XY107: Mewtwo-EX
+✅ xyp-XY108: Machamp-EX
+✅ xyp-XY109: Gyarados
+✅ xyp-XY11: Skiddo
+✅ xyp-XY110: Mew
+✅ xyp-XY112: Jirachi
+✅ xyp-XY113: Manaphy
+✅ xyp-XY115: Shaymin
+✅ xyp-XY116: Arceus
+✅ xyp-XY117: Victini
+✅ xyp-XY118: Keldeo
+✅ xyp-XY119: Genesect
+✅ xyp-XY12: Honedge
+✅ xyp-XY120: Meloetta
+✅ xyp-XY123: Venusaur-EX
+✅ xyp-XY124: Pikachu-EX
+✅ xyp-XY125: Mewtwo-EX
+✅ xyp-XY126: Mew-EX
+✅ xyp-XY127: Moltres
+✅ xyp-XY128: White Kyurem
+✅ xyp-XY129: Zygarde
+✅ xyp-XY13: Machamp
+✅ xyp-XY130: Tyranitar
+✅ xyp-XY131: Pansear
+✅ xyp-XY132: Gastly
+✅ xyp-XY134: Empoleon BREAK
+✅ xyp-XY136: Noctowl BREAK
+✅ xyp-XY137: Vivillon
+✅ xyp-XY138: Froakie
+✅ xyp-XY139: Floette
+✅ xyp-XY14: Trevenant
+✅ xyp-XY140: Lucario
+✅ xyp-XY141: Rayquaza
+✅ xyp-XY143: Magikarp
+✅ xyp-XY144: Yanmega
+
+Progress: 400/950 requests
+Success: 373 | Failed: 26 | Skipped: 0
+Rate: 57 cards/min
+✅ xyp-XY145: Volcanion
+✅ xyp-XY147: Hoopa
+✅ xyp-XY148: Shaymin-EX
+✅ xyp-XY149: Xerneas-EX
+✅ xyp-XY15: Slurpuff
+✅ xyp-XY150: Yveltal-EX
+✅ xyp-XY150a: Yveltal-EX
+✅ xyp-XY151: Zygarde-EX
+✅ xyp-XY152: Zygarde
+✅ xyp-XY153: Ho-Oh
+✅ xyp-XY154: Ho-Oh BREAK
+✅ xyp-XY155: Wobbuffet BREAK
+✅ xyp-XY156: Lugia
+✅ xyp-XY158: M Beedrill-EX
+✅ xyp-XY16: Gogoat
+✅ xyp-XY162: Greninja
+✅ xyp-XY163: Weezing
+✅ xyp-XY164: Volcanion
+✅ xyp-XY165: Magearna
+✅ xyp-XY166: M Gengar-EX
+✅ xyp-XY167: Garchomp-EX
+✅ xyp-XY168: M Garchomp-EX
+✅ xyp-XY170: Salamence-EX
+✅ xyp-XY171: M Salamence-EX
+✅ xyp-XY173: Volcanion-EX
+✅ xyp-XY174: Pikachu-EX
+✅ xyp-XY175: Magearna-EX
+✅ xyp-XY179: Snorlax
+✅ xyp-XY182: Mandibuzz BREAK
+✅ xyp-XY183: Mewtwo-EX
+✅ xyp-XY184: Giratina
+✅ xyp-XY185: Volcanion
+✅ xyp-XY186: Magearna
+✅ xyp-XY187: Celebi
+✅ xyp-XY188: Shaymin
+✅ xyp-XY189: Victini
+✅ xyp-XY190: Manaphy
+✅ xyp-XY191: Keldeo
+✅ xyp-XY192: Mew
+✅ xyp-XY193: Meloetta
+✅ xyp-XY195: Jirachi
+✅ xyp-XY196: Genesect
+✅ xyp-XY198: M Camerupt-EX
+✅ xyp-XY198a: M Camerupt-EX
+✅ xyp-XY20: Greninja-EX
+✅ xyp-XY200: M Sharpedo-EX
+✅ xyp-XY200a: M Sharpedo-EX
+✅ xyp-XY202: Pikachu
+✅ xyp-XY23: Shiftry
+✅ xyp-XY24: Greninja
+
+Progress: 450/950 requests
+Success: 423 | Failed: 26 | Skipped: 0
+Rate: 55 cards/min
+✅ xyp-XY25: Krookodile-EX
+✅ xyp-XY26: Pyroar
+✅ xyp-XY28: Venusaur-EX
+✅ xyp-XY31: Xerneas
+✅ xyp-XY32: Yveltal
+✅ xyp-XY34: Metagross-EX
+✅ xyp-XY35: M Metagross-EX
+✅ xyp-XY36: Treecko
+✅ xyp-XY37: Torchic
+✅ xyp-XY38: Mudkip
+✅ xyp-XY39: Kingdra
+✅ xyp-XY40: Ditto
+✅ xyp-XY41: Kyogre-EX
+✅ xyp-XY42: Groudon-EX
+✅ xyp-XY44: M Diancie-EX
+✅ xyp-XY45: Gallade-EX
+✅ xyp-XY47: Heliolisk
+✅ xyp-XY48: Meowstic
+✅ xyp-XY49: Regirock
+✅ xyp-XY50: Pangoro
+✅ xyp-XY51: Kyogre
+✅ xyp-XY52: Groudon
+✅ xyp-XY53: Sceptile-EX
+✅ xyp-XY55: Swampert-EX
+✅ xyp-XY57: Fearow
+✅ xyp-XY58: Malamar
+✅ xyp-XY59: Salamence
+✅ xyp-XY60: Gyarados
+✅ xyp-XY61: Flygon-EX
+✅ xyp-XY63: M Absol-EX
+✅ xyp-XY64: Rayquaza
+✅ xyp-XY65: Latios
+✅ xyp-XY66: Rayquaza-EX
+✅ xyp-XY67: Jirachi
+✅ xyp-XY67a: Jirachi
+✅ xyp-XY69: Rayquaza-EX
+✅ xyp-XY70: Tyrantrum-EX
+✅ xyp-XY71: Hoopa-EX
+✅ xyp-XY72: Latios-EX
+✅ xyp-XY73: Rayquaza-EX
+✅ xyp-XY74: Reshiram
+✅ xyp-XY75: Palkia
+✅ xyp-XY76: Zekrom
+✅ xyp-XY78: Latias
+✅ xyp-XY79: Latios
+✅ xyp-XY81: White Kyurem
+✅ xyp-XY82: Regigigas
+✅ xyp-XY84: Pikachu-EX
+✅ xyp-XY85: Hoopa-EX
+✅ xyp-XY86: M Blaziken-EX
+
+Progress: 500/950 requests
+Success: 473 | Failed: 26 | Skipped: 0
+Rate: 53 cards/min
+✅ xyp-XY87: M Swampert-EX
+✅ xyp-XY89: Pikachu
+✅ xyp-XY90: Hoopa
+✅ xyp-XY92: Sableye
+✅ xyp-XY98: M Aerodactyl-EX
+✅ xy1-1: Venusaur-EX
+✅ xy1-10: Pansage
+✅ xy1-100: Tauros
+✅ xy1-102: Taillow
+✅ xy1-104: Skitty
+✅ xy1-105: Delcatty
+✅ xy1-108: Lillipup
+✅ xy1-109: Herdier
+✅ xy1-11: Simisage
+✅ xy1-110: Stoutland
+✅ xy1-13: Quilladin
+✅ xy1-14: Chesnaught
+✅ xy1-141: Venusaur-EX
+✅ xy1-143: Emolga-EX
+✅ xy1-144: Yveltal-EX
+✅ xy1-145: Skarmory-EX
+✅ xy1-146: Xerneas-EX
+✅ xy1-15: Scatterbug
+✅ xy1-16: Spewpa
+✅ xy1-17: Vivillon
+✅ xy1-18: Skiddo
+✅ xy1-19: Gogoat
+✅ xy1-2: M Venusaur-EX
+✅ xy1-20: Slugma
+✅ xy1-21: Magcargo
+✅ xy1-22: Pansear
+✅ xy1-23: Simisear
+✅ xy1-24: Fennekin
+✅ xy1-27: Fletchinder
+✅ xy1-28: Talonflame
+✅ xy1-3: Weedle
+✅ xy1-30: M Blastoise-EX
+✅ xy1-31: Shellder
+✅ xy1-33: Staryu
+✅ xy1-34: Starmie
+✅ xy1-35: Lapras
+✅ xy1-37: Panpour
+✅ xy1-38: Simipour
+✅ xy1-39: Froakie
+✅ xy1-4: Kakuna
+✅ xy1-40: Frogadier
+✅ xy1-41: Greninja
+✅ xy1-42: Pikachu
+✅ xy1-43: Raichu
+✅ xy1-44: Voltorb
+
+Progress: 550/950 requests
+Success: 523 | Failed: 26 | Skipped: 0
+Rate: 52 cards/min
+✅ xy1-45: Electrode
+✅ xy1-46: Emolga-EX
+✅ xy1-47: Ekans
+✅ xy1-49: Spoink
+✅ xy1-50: Grumpig
+✅ xy1-51: Venipede
+✅ xy1-52: Whirlipede
+✅ xy1-53: Scolipede
+✅ xy1-54: Phantump
+✅ xy1-55: Trevenant
+✅ xy1-56: Pumpkaboo
+✅ xy1-57: Gourgeist
+✅ xy1-58: Diglett
+✅ xy1-6: Ledyba
+✅ xy1-60: Rhyhorn
+✅ xy1-61: Rhydon
+✅ xy1-62: Rhyperior
+✅ xy1-63: Lunatone
+✅ xy1-64: Solrock
+✅ xy1-65: Timburr
+✅ xy1-66: Gurdurr
+✅ xy1-68: Sableye
+✅ xy1-69: Sandile
+✅ xy1-7: Ledian
+✅ xy1-70: Krokorok
+✅ xy1-71: Krookodile
+✅ xy1-72: Zorua
+✅ xy1-73: Zoroark
+✅ xy1-74: Inkay
+✅ xy1-75: Inkay
+✅ xy1-76: Malamar
+✅ xy1-77: Malamar
+✅ xy1-78: Yveltal
+✅ xy1-79: Yveltal-EX
+✅ xy1-8: Volbeat
+✅ xy1-80: Skarmory-EX
+✅ xy1-81: Pawniard
+✅ xy1-83: Honedge
+✅ xy1-87: Jigglypuff
+✅ xy1-88: Jigglypuff
+✅ xy1-89: Wigglytuff
+✅ xy1-9: Illumise
+✅ xy1-90: Wigglytuff
+✅ xy1-91: Mr. Mime
+✅ xy1-92: Spritzee
+✅ xy1-94: Swirlix
+✅ xy1-95: Slurpuff
+✅ xy1-96: Xerneas
+✅ xy1-97: Xerneas-EX
+✅ basep-1: Pikachu
+
+Progress: 600/950 requests
+Success: 573 | Failed: 26 | Skipped: 0
+Rate: 51 cards/min
+✅ basep-10: Meowth
+✅ basep-11: Eevee
+✅ basep-12: Mewtwo
+✅ basep-13: Venusaur
+✅ basep-14: Mewtwo
+✅ basep-18: Team Rocket's Meowth
+✅ basep-19: Sabrina's Abra
+✅ basep-2: Electabuzz
+✅ basep-20: Psyduck
+✅ basep-21: Moltres
+✅ basep-23: Zapdos
+✅ basep-25: Flying Pikachu
+✅ basep-26: Pikachu
+✅ basep-27: Pikachu
+✅ basep-28: Surfing Pikachu
+✅ basep-29: Marill
+✅ basep-3: Mewtwo
+✅ basep-30: Togepi
+✅ basep-32: Smeargle
+✅ basep-33: Scizor
+✅ basep-34: Entei
+✅ basep-35: Pichu
+✅ basep-36: Igglybuff
+✅ basep-37: Hitmontop
+✅ basep-38: Unown [J]
+✅ basep-39: Misdreavus
+✅ basep-4: Pikachu
+✅ basep-43: Machamp
+✅ basep-44: Magmar
+✅ basep-45: Scyther
+✅ basep-46: Electabuzz
+✅ basep-47: Mew
+✅ basep-49: Snorlax
+✅ basep-51: Rapidash
+✅ basep-52: Ho-oh
+✅ basep-53: Suicune
+✅ basep-6: Arcanine
+✅ basep-7: Jigglypuff
+✅ basep-8: Mew
+✅ basep-9: Mew
+✅ swsh4-1: Weedle
+✅ swsh4-10: Seedot
+✅ swsh4-101: Grapploct
+✅ swsh4-102: Zamazenta
+✅ swsh4-103: Poochyena
+✅ swsh4-104: Mightyena
+✅ swsh4-107: Sandile
+✅ swsh4-108: Krokorok
+✅ swsh4-109: Krookodile
+✅ swsh4-11: Nuzleaf
+
+Progress: 650/950 requests
+Success: 623 | Failed: 26 | Skipped: 0
+Rate: 50 cards/min
+✅ swsh4-110: Trubbish
+✅ swsh4-111: Garbodor
+✅ swsh4-112: Galarian Meowth
+✅ swsh4-113: Galarian Perrserker
+✅ swsh4-115: Steelix V
+✅ swsh4-117: Metang
+✅ swsh4-118: Metagross
+✅ swsh4-119: Jirachi
+✅ swsh4-12: Shiftry
+✅ swsh4-120: Lucario
+✅ swsh4-122: Excadrill
+✅ swsh4-123: Ferroseed
+✅ swsh4-124: Ferrothorn
+✅ swsh4-125: Galarian Stunfisk
+✅ swsh4-128: Magearna
+✅ swsh4-13: Nincada
+✅ swsh4-130: Eevee
+✅ swsh4-131: Snorlax
+✅ swsh4-132: Lugia
+✅ swsh4-133: Taillow
+✅ swsh4-134: Swellow
+✅ swsh4-135: Whismur
+✅ swsh4-136: Loudred
+✅ swsh4-137: Exploud
+✅ swsh4-138: Rayquaza
+✅ swsh4-14: Ninjask
+✅ swsh4-140: Togekiss V
+✅ swsh4-141: Togekiss VMAX
+✅ swsh4-142: Tornadus
+✅ swsh4-143: Pikipek
+✅ swsh4-144: Trumbeak
+✅ swsh4-145: Toucannon
+✅ swsh4-15: Shaymin
+✅ swsh4-16: Genesect
+✅ swsh4-166: Orbeetle V
+✅ swsh4-167: Zarude V
+✅ swsh4-168: Talonflame V
+✅ swsh4-169: Galarian Darmanitan V
+✅ swsh4-17: Skiddo
+✅ swsh4-170: Pikachu V
+✅ swsh4-174: Galarian Sirfetch'd V
+✅ swsh4-176: Steelix V
+✅ swsh4-178: Togekiss V
+✅ swsh4-18: Gogoat
+✅ swsh4-186: Orbeetle VMAX
+✅ swsh4-187: Galarian Darmanitan VMAX
+✅ swsh4-188: Pikachu VMAX
+✅ swsh4-191: Togekiss VMAX
+✅ swsh4-198: Galarian Obstagoon
+✅ swsh4-199: Oranguru
+
+Progress: 700/950 requests
+Success: 673 | Failed: 26 | Skipped: 0
+Rate: 50 cards/min
+✅ swsh4-2: Kakuna
+✅ swsh4-20: Orbeetle V
+✅ swsh4-21: Orbeetle VMAX
+✅ swsh4-22: Zarude V
+✅ swsh4-26: Flareon
+✅ swsh4-27: Slugma
+✅ swsh4-28: Magcargo
+✅ swsh4-29: Talonflame V
+✅ swsh4-30: Vaporeon
+✅ swsh4-31: Wailmer
+✅ swsh4-32: Wailord
+✅ swsh4-33: Oshawott
+✅ swsh4-35: Samurott
+✅ swsh4-36: Galarian Darmanitan V
+✅ swsh4-37: Galarian Darmanitan VMAX
+✅ swsh4-39: Drednaw
+✅ swsh4-4: Exeggcute
+✅ swsh4-43: Pikachu V
+✅ swsh4-44: Pikachu VMAX
+✅ swsh4-45: Voltorb
+✅ swsh4-46: Electrode
+✅ swsh4-47: Jolteon
+✅ swsh4-48: Zapdos
+✅ swsh4-5: Exeggutor
+✅ swsh4-50: Raikou
+✅ swsh4-51: Electrike
+✅ swsh4-52: Manectric
+✅ swsh4-54: Zebstrika
+✅ swsh4-55: Joltik
+✅ swsh4-56: Galvantula
+✅ swsh4-57: Tynamo
+✅ swsh4-58: Eelektrik
+✅ swsh4-59: Eelektross
+✅ swsh4-6: Yanma
+✅ swsh4-60: Zekrom
+✅ swsh4-61: Zeraora
+✅ swsh4-62: Pincurchin
+✅ swsh4-63: Clefairy
+✅ swsh4-65: Girafarig
+✅ swsh4-66: Shedinja
+✅ swsh4-67: Shuppet
+✅ swsh4-7: Yanmega
+✅ swsh4-70: Dusclops
+✅ swsh4-71: Dusknoir
+✅ swsh4-73: Woobat
+✅ swsh4-74: Swoobat
+✅ swsh4-76: Whimsicott
+✅ swsh4-78: Xerneas
+✅ swsh4-8: Pineco
+✅ swsh4-80: Milcery
+
+Progress: 750/950 requests
+Success: 723 | Failed: 26 | Skipped: 0
+Rate: 49 cards/min
+✅ swsh4-82: Zacian
+✅ swsh4-83: Wooper
+✅ swsh4-84: Quagsire
+✅ swsh4-85: Shuckle
+✅ swsh4-86: Phanpy
+✅ swsh4-88: Hitmontop
+✅ swsh4-89: Regirock
+✅ swsh4-90: Riolu
+✅ swsh4-92: Terrakion

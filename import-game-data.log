@@ -1,0 +1,658 @@
+🚀 Smart Game Data Import
+========================
+Mode: NO API KEY
+Rate limit: 20/5sec
+Delay between requests: 300ms
+
+Found 12280 Pokemon cards needing game data
+
+Progress: 1/12280 (0.0%)
+Rate: 24 cards/min | Success: 0 | Failed: 0
+⚠ Rate limited at 1 requests
+✗ xyp-XY01: Chespin - No API data
+⚠ Rate limited at 2 requests
+✗ xyp-XY02: Fennekin - No API data
+⚠ Rate limited at 3 requests
+✗ xyp-XY03: Froakie - No API data
+⚠ Rate limited at 4 requests
+✗ xyp-XY04: Sylveon - No API data
+⚠ Rate limited at 5 requests
+✗ xyp-XY05: Xerneas - No API data
+⚠ Rate limited at 6 requests
+✗ xyp-XY06: Yveltal - No API data
+⚠ Rate limited at 7 requests
+✗ xyp-XY07: Xerneas-EX - No API data
+⚠ Rate limited at 8 requests
+✗ xyp-XY08: Yveltal-EX - No API data
+⚠ Rate limited at 9 requests
+✗ xyp-XY09: Garchomp-EX - No API data
+
+Progress: 10/12280 (0.1%)
+Rate: 85 cards/min | Success: 0 | Failed: 9
+⚠ Rate limited at 10 requests
+✗ xyp-XY10: Dragalge - No API data
+⚠ Rate limited at 11 requests
+✗ xyp-XY100: Mewtwo - No API data
+⚠ Rate limited at 12 requests
+✗ xyp-XY101: Mewtwo - No API data
+⚠ Rate limited at 13 requests
+✗ xyp-XY106: Gyarados-EX - No API data
+⚠ Rate limited at 14 requests
+✗ xyp-XY107: Mewtwo-EX - No API data
+⚠ Rate limited at 15 requests
+✗ xyp-XY108: Machamp-EX - No API data
+⚠ Rate limited at 16 requests
+✗ xyp-XY109: Gyarados - No API data
+⚠ Rate limited at 17 requests
+✗ xyp-XY11: Skiddo - No API data
+⚠ Rate limited at 18 requests
+✗ xyp-XY110: Mew - No API data
+⚠ Rate limited at 19 requests
+✗ xyp-XY112: Jirachi - No API data
+
+Progress: 20/12280 (0.2%)
+Rate: 104 cards/min | Success: 0 | Failed: 19
+⚠ Rate limited at 20 requests
+✗ xyp-XY113: Manaphy - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 21 requests
+✗ xyp-XY115: Shaymin - No API data
+⚠ Rate limited at 22 requests
+✗ xyp-XY116: Arceus - No API data
+⚠ Rate limited at 23 requests
+✗ xyp-XY117: Victini - No API data
+⚠ Rate limited at 24 requests
+✗ xyp-XY118: Keldeo - No API data
+⚠ Rate limited at 25 requests
+✗ xyp-XY119: Genesect - No API data
+⚠ Rate limited at 26 requests
+✗ xyp-XY12: Honedge - No API data
+⚠ Rate limited at 27 requests
+✗ xyp-XY120: Meloetta - No API data
+⚠ Rate limited at 28 requests
+✗ xyp-XY123: Venusaur-EX - No API data
+⚠ Rate limited at 29 requests
+✗ xyp-XY124: Pikachu-EX - No API data
+
+Progress: 30/12280 (0.2%)
+Rate: 86 cards/min | Success: 0 | Failed: 29
+⚠ Rate limited at 30 requests
+✗ xyp-XY125: Mewtwo-EX - No API data
+⚠ Rate limited at 31 requests
+✗ xyp-XY126: Mew-EX - No API data
+⚠ Rate limited at 32 requests
+✗ xyp-XY127: Moltres - No API data
+⚠ Rate limited at 33 requests
+✗ xyp-XY128: White Kyurem - No API data
+⚠ Rate limited at 34 requests
+✗ xyp-XY129: Zygarde - No API data
+⚠ Rate limited at 35 requests
+✗ xyp-XY13: Machamp - No API data
+⚠ Rate limited at 36 requests
+✗ xyp-XY130: Tyranitar - No API data
+⚠ Rate limited at 37 requests
+✗ xyp-XY131: Pansear - No API data
+⚠ Rate limited at 38 requests
+✗ xyp-XY132: Gastly - No API data
+⚠ Rate limited at 39 requests
+✗ xyp-XY134: Empoleon BREAK - No API data
+
+Progress: 40/12280 (0.3%)
+Rate: 94 cards/min | Success: 0 | Failed: 39
+⚠ Rate limited at 40 requests
+✗ xyp-XY136: Noctowl BREAK - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 41 requests
+✗ xyp-XY137: Vivillon - No API data
+⚠ Rate limited at 42 requests
+✗ xyp-XY138: Froakie - No API data
+⚠ Rate limited at 43 requests
+✗ xyp-XY139: Floette - No API data
+⚠ Rate limited at 44 requests
+✗ xyp-XY14: Trevenant - No API data
+⚠ Rate limited at 45 requests
+✗ xyp-XY140: Lucario - No API data
+⚠ Rate limited at 46 requests
+✗ xyp-XY141: Rayquaza - No API data
+⚠ Rate limited at 47 requests
+✗ xyp-XY143: Magikarp - No API data
+⚠ Rate limited at 48 requests
+✗ xyp-XY144: Yanmega - No API data
+⚠ Rate limited at 49 requests
+✗ xyp-XY145: Volcanion - No API data
+
+Progress: 50/12280 (0.4%)
+Rate: 86 cards/min | Success: 0 | Failed: 49
+⚠ Rate limited at 50 requests
+✗ xyp-XY147: Hoopa - No API data
+⚠ Rate limited at 51 requests
+✗ xyp-XY148: Shaymin-EX - No API data
+⚠ Rate limited at 52 requests
+✗ xyp-XY149: Xerneas-EX - No API data
+⚠ Rate limited at 53 requests
+✗ xyp-XY15: Slurpuff - No API data
+⚠ Rate limited at 54 requests
+✗ xyp-XY150: Yveltal-EX - No API data
+⚠ Rate limited at 55 requests
+✗ xyp-XY150a: Yveltal-EX - No API data
+⚠ Rate limited at 56 requests
+✗ xyp-XY151: Zygarde-EX - No API data
+⚠ Rate limited at 57 requests
+✗ xyp-XY152: Zygarde - No API data
+⚠ Rate limited at 58 requests
+✗ xyp-XY153: Ho-Oh - No API data
+⚠ Rate limited at 59 requests
+✗ xyp-XY154: Ho-Oh BREAK - No API data
+
+Progress: 60/12280 (0.5%)
+Rate: 91 cards/min | Success: 0 | Failed: 59
+⚠ Rate limited at 60 requests
+✗ xyp-XY155: Wobbuffet BREAK - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 61 requests
+✗ xyp-XY156: Lugia - No API data
+⚠ Rate limited at 62 requests
+✗ xyp-XY158: M Beedrill-EX - No API data
+⚠ Rate limited at 63 requests
+✗ xyp-XY16: Gogoat - No API data
+⚠ Rate limited at 64 requests
+✗ xyp-XY162: Greninja - No API data
+⚠ Rate limited at 65 requests
+✗ xyp-XY163: Weezing - No API data
+⚠ Rate limited at 66 requests
+✗ xyp-XY164: Volcanion - No API data
+⚠ Rate limited at 67 requests
+✗ xyp-XY165: Magearna - No API data
+⚠ Rate limited at 68 requests
+✗ xyp-XY166: M Gengar-EX - No API data
+⚠ Rate limited at 69 requests
+✗ xyp-XY167: Garchomp-EX - No API data
+
+Progress: 70/12280 (0.6%)
+Rate: 86 cards/min | Success: 0 | Failed: 69
+⚠ Rate limited at 70 requests
+✗ xyp-XY168: M Garchomp-EX - No API data
+⚠ Rate limited at 71 requests
+✗ xyp-XY170: Salamence-EX - No API data
+⚠ Rate limited at 72 requests
+✗ xyp-XY171: M Salamence-EX - No API data
+⚠ Rate limited at 73 requests
+✗ xyp-XY173: Volcanion-EX - No API data
+⚠ Rate limited at 74 requests
+✗ xyp-XY174: Pikachu-EX - No API data
+⚠ Rate limited at 75 requests
+✗ xyp-XY175: Magearna-EX - No API data
+⚠ Rate limited at 76 requests
+✗ xyp-XY179: Snorlax - No API data
+⚠ Rate limited at 77 requests
+✗ xyp-XY182: Mandibuzz BREAK - No API data
+⚠ Rate limited at 78 requests
+✗ xyp-XY183: Mewtwo-EX - No API data
+⚠ Rate limited at 79 requests
+✗ xyp-XY184: Giratina - No API data
+
+Progress: 80/12280 (0.7%)
+Rate: 90 cards/min | Success: 0 | Failed: 79
+⚠ Rate limited at 80 requests
+✗ xyp-XY185: Volcanion - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 81 requests
+✗ xyp-XY186: Magearna - No API data
+⚠ Rate limited at 82 requests
+✗ xyp-XY187: Celebi - No API data
+⚠ Rate limited at 83 requests
+✗ xyp-XY188: Shaymin - No API data
+⚠ Rate limited at 84 requests
+✗ xyp-XY189: Victini - No API data
+⚠ Rate limited at 85 requests
+✗ xyp-XY190: Manaphy - No API data
+⚠ Rate limited at 86 requests
+✗ xyp-XY191: Keldeo - No API data
+⚠ Rate limited at 87 requests
+✗ xyp-XY192: Mew - No API data
+⚠ Rate limited at 88 requests
+✗ xyp-XY193: Meloetta - No API data
+⚠ Rate limited at 89 requests
+✗ xyp-XY195: Jirachi - No API data
+
+Progress: 90/12280 (0.7%)
+Rate: 87 cards/min | Success: 0 | Failed: 89
+⚠ Rate limited at 90 requests
+✗ xyp-XY196: Genesect - No API data
+⚠ Rate limited at 91 requests
+✗ xyp-XY198: M Camerupt-EX - No API data
+⚠ Rate limited at 92 requests
+✗ xyp-XY198a: M Camerupt-EX - No API data
+⚠ Rate limited at 93 requests
+✗ xyp-XY20: Greninja-EX - No API data
+⚠ Rate limited at 94 requests
+✗ xyp-XY200: M Sharpedo-EX - No API data
+⚠ Rate limited at 95 requests
+✗ xyp-XY200a: M Sharpedo-EX - No API data
+⚠ Rate limited at 96 requests
+✗ xyp-XY202: Pikachu - No API data
+⚠ Rate limited at 97 requests
+✗ xyp-XY23: Shiftry - No API data
+⚠ Rate limited at 98 requests
+✗ xyp-XY24: Greninja - No API data
+⚠ Rate limited at 99 requests
+✗ xyp-XY25: Krookodile-EX - No API data
+
+Progress: 100/12280 (0.8%)
+Rate: 90 cards/min | Success: 0 | Failed: 99
+⚠ Rate limited at 100 requests
+✗ xyp-XY26: Pyroar - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 101 requests
+✗ xyp-XY28: Venusaur-EX - No API data
+⚠ Rate limited at 102 requests
+✗ xyp-XY31: Xerneas - No API data
+⚠ Rate limited at 103 requests
+✗ xyp-XY32: Yveltal - No API data
+⚠ Rate limited at 104 requests
+✗ xyp-XY34: Metagross-EX - No API data
+⚠ Rate limited at 105 requests
+✗ xyp-XY35: M Metagross-EX - No API data
+⚠ Rate limited at 106 requests
+✗ xyp-XY36: Treecko - No API data
+⚠ Rate limited at 107 requests
+✗ xyp-XY37: Torchic - No API data
+⚠ Rate limited at 108 requests
+✗ xyp-XY38: Mudkip - No API data
+⚠ Rate limited at 109 requests
+✗ xyp-XY39: Kingdra - No API data
+
+Progress: 110/12280 (0.9%)
+Rate: 87 cards/min | Success: 0 | Failed: 109
+⚠ Rate limited at 110 requests
+✗ xyp-XY40: Ditto - No API data
+⚠ Rate limited at 111 requests
+✗ xyp-XY41: Kyogre-EX - No API data
+⚠ Rate limited at 112 requests
+✗ xyp-XY42: Groudon-EX - No API data
+⚠ Rate limited at 113 requests
+✗ xyp-XY44: M Diancie-EX - No API data
+⚠ Rate limited at 114 requests
+✗ xyp-XY45: Gallade-EX - No API data
+⚠ Rate limited at 115 requests
+✗ xyp-XY47: Heliolisk - No API data
+⚠ Rate limited at 116 requests
+✗ xyp-XY48: Meowstic - No API data
+⚠ Rate limited at 117 requests
+✗ xyp-XY49: Regirock - No API data
+⚠ Rate limited at 118 requests
+✗ xyp-XY50: Pangoro - No API data
+⚠ Rate limited at 119 requests
+✗ xyp-XY51: Kyogre - No API data
+
+Progress: 120/12280 (1.0%)
+Rate: 89 cards/min | Success: 0 | Failed: 119
+⚠ Rate limited at 120 requests
+✗ xyp-XY52: Groudon - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 121 requests
+✗ xyp-XY53: Sceptile-EX - No API data
+⚠ Rate limited at 122 requests
+✗ xyp-XY55: Swampert-EX - No API data
+⚠ Rate limited at 123 requests
+✗ xyp-XY57: Fearow - No API data
+⚠ Rate limited at 124 requests
+✗ xyp-XY58: Malamar - No API data
+⚠ Rate limited at 125 requests
+✗ xyp-XY59: Salamence - No API data
+⚠ Rate limited at 126 requests
+✗ xyp-XY60: Gyarados - No API data
+⚠ Rate limited at 127 requests
+✗ xyp-XY61: Flygon-EX - No API data
+⚠ Rate limited at 128 requests
+✗ xyp-XY63: M Absol-EX - No API data
+⚠ Rate limited at 129 requests
+✗ xyp-XY64: Rayquaza - No API data
+
+Progress: 130/12280 (1.1%)
+Rate: 86 cards/min | Success: 0 | Failed: 129
+⚠ Rate limited at 130 requests
+✗ xyp-XY65: Latios - No API data
+⚠ Rate limited at 131 requests
+✗ xyp-XY66: Rayquaza-EX - No API data
+⚠ Rate limited at 132 requests
+✗ xyp-XY67: Jirachi - No API data
+⚠ Rate limited at 133 requests
+✗ xyp-XY67a: Jirachi - No API data
+⚠ Rate limited at 134 requests
+✗ xyp-XY69: Rayquaza-EX - No API data
+⚠ Rate limited at 135 requests
+✗ xyp-XY70: Tyrantrum-EX - No API data
+⚠ Rate limited at 136 requests
+✗ xyp-XY71: Hoopa-EX - No API data
+⚠ Rate limited at 137 requests
+✗ xyp-XY72: Latios-EX - No API data
+⚠ Rate limited at 138 requests
+✗ xyp-XY73: Rayquaza-EX - No API data
+⚠ Rate limited at 139 requests
+✗ xyp-XY74: Reshiram - No API data
+
+Progress: 140/12280 (1.1%)
+Rate: 88 cards/min | Success: 0 | Failed: 139
+⚠ Rate limited at 140 requests
+✗ xyp-XY75: Palkia - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 141 requests
+✗ xyp-XY76: Zekrom - No API data
+⚠ Rate limited at 142 requests
+✗ xyp-XY78: Latias - No API data
+⚠ Rate limited at 143 requests
+✗ xyp-XY79: Latios - No API data
+⚠ Rate limited at 144 requests
+✗ xyp-XY81: White Kyurem - No API data
+⚠ Rate limited at 145 requests
+✗ xyp-XY82: Regigigas - No API data
+⚠ Rate limited at 146 requests
+✗ xyp-XY84: Pikachu-EX - No API data
+⚠ Rate limited at 147 requests
+✗ xyp-XY85: Hoopa-EX - No API data
+⚠ Rate limited at 148 requests
+✗ xyp-XY86: M Blaziken-EX - No API data
+⚠ Rate limited at 149 requests
+✗ xyp-XY87: M Swampert-EX - No API data
+
+Progress: 150/12280 (1.2%)
+Rate: 86 cards/min | Success: 0 | Failed: 149
+⚠ Rate limited at 150 requests
+✗ xyp-XY89: Pikachu - No API data
+⚠ Rate limited at 151 requests
+✗ xyp-XY90: Hoopa - No API data
+⚠ Rate limited at 152 requests
+✗ xyp-XY92: Sableye - No API data
+⚠ Rate limited at 153 requests
+✗ xyp-XY98: M Aerodactyl-EX - No API data
+⚠ Rate limited at 154 requests
+✗ xy1-1: Venusaur-EX - No API data
+⚠ Rate limited at 155 requests
+✗ xy1-10: Pansage - No API data
+⚠ Rate limited at 156 requests
+✗ xy1-100: Tauros - No API data
+⚠ Rate limited at 157 requests
+✗ xy1-102: Taillow - No API data
+⚠ Rate limited at 158 requests
+✗ xy1-104: Skitty - No API data
+⚠ Rate limited at 159 requests
+✗ xy1-105: Delcatty - No API data
+
+Progress: 160/12280 (1.3%)
+Rate: 88 cards/min | Success: 0 | Failed: 159
+⚠ Rate limited at 160 requests
+✗ xy1-108: Lillipup - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 161 requests
+✗ xy1-109: Herdier - No API data
+⚠ Rate limited at 162 requests
+✗ xy1-11: Simisage - No API data
+⚠ Rate limited at 163 requests
+✗ xy1-110: Stoutland - No API data
+⚠ Rate limited at 164 requests
+✗ xy1-13: Quilladin - No API data
+⚠ Rate limited at 165 requests
+✗ xy1-14: Chesnaught - No API data
+⚠ Rate limited at 166 requests
+✗ xy1-141: Venusaur-EX - No API data
+⚠ Rate limited at 167 requests
+✗ xy1-143: Emolga-EX - No API data
+⚠ Rate limited at 168 requests
+✗ xy1-144: Yveltal-EX - No API data
+⚠ Rate limited at 169 requests
+✗ xy1-145: Skarmory-EX - No API data
+
+Progress: 170/12280 (1.4%)
+Rate: 86 cards/min | Success: 0 | Failed: 169
+⚠ Rate limited at 170 requests
+✗ xy1-146: Xerneas-EX - No API data
+⚠ Rate limited at 171 requests
+✗ xy1-15: Scatterbug - No API data
+⚠ Rate limited at 172 requests
+✗ xy1-16: Spewpa - No API data
+⚠ Rate limited at 173 requests
+✗ xy1-17: Vivillon - No API data
+⚠ Rate limited at 174 requests
+✗ xy1-18: Skiddo - No API data
+⚠ Rate limited at 175 requests
+✗ xy1-19: Gogoat - No API data
+⚠ Rate limited at 176 requests
+✗ xy1-2: M Venusaur-EX - No API data
+⚠ Rate limited at 177 requests
+✗ xy1-20: Slugma - No API data
+⚠ Rate limited at 178 requests
+✗ xy1-21: Magcargo - No API data
+⚠ Rate limited at 179 requests
+✗ xy1-22: Pansear - No API data
+
+Progress: 180/12280 (1.5%)
+Rate: 88 cards/min | Success: 0 | Failed: 179
+⚠ Rate limited at 180 requests
+✗ xy1-23: Simisear - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 181 requests
+✗ xy1-24: Fennekin - No API data
+⚠ Rate limited at 182 requests
+✗ xy1-27: Fletchinder - No API data
+⚠ Rate limited at 183 requests
+✗ xy1-28: Talonflame - No API data
+⚠ Rate limited at 184 requests
+✗ xy1-3: Weedle - No API data
+⚠ Rate limited at 185 requests
+✗ xy1-30: M Blastoise-EX - No API data
+⚠ Rate limited at 186 requests
+✗ xy1-31: Shellder - No API data
+⚠ Rate limited at 187 requests
+✗ xy1-33: Staryu - No API data
+⚠ Rate limited at 188 requests
+✗ xy1-34: Starmie - No API data
+⚠ Rate limited at 189 requests
+✗ xy1-35: Lapras - No API data
+
+Progress: 190/12280 (1.5%)
+Rate: 86 cards/min | Success: 0 | Failed: 189
+⚠ Rate limited at 190 requests
+✗ xy1-37: Panpour - No API data
+⚠ Rate limited at 191 requests
+✗ xy1-38: Simipour - No API data
+⚠ Rate limited at 192 requests
+✗ xy1-39: Froakie - No API data
+⚠ Rate limited at 193 requests
+✗ xy1-4: Kakuna - No API data
+⚠ Rate limited at 194 requests
+✗ xy1-40: Frogadier - No API data
+⚠ Rate limited at 195 requests
+✗ xy1-41: Greninja - No API data
+⚠ Rate limited at 196 requests
+✗ xy1-42: Pikachu - No API data
+⚠ Rate limited at 197 requests
+✗ xy1-43: Raichu - No API data
+⚠ Rate limited at 198 requests
+✗ xy1-44: Voltorb - No API data
+⚠ Rate limited at 199 requests
+✗ xy1-45: Electrode - No API data
+
+Progress: 200/12280 (1.6%)
+Rate: 88 cards/min | Success: 0 | Failed: 199
+⚠ Rate limited at 200 requests
+✗ xy1-46: Emolga-EX - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 201 requests
+✗ xy1-47: Ekans - No API data
+⚠ Rate limited at 202 requests
+✗ xy1-49: Spoink - No API data
+⚠ Rate limited at 203 requests
+✗ xy1-50: Grumpig - No API data
+⚠ Rate limited at 204 requests
+✗ xy1-51: Venipede - No API data
+⚠ Rate limited at 205 requests
+✗ xy1-52: Whirlipede - No API data
+⚠ Rate limited at 206 requests
+✗ xy1-53: Scolipede - No API data
+⚠ Rate limited at 207 requests
+✗ xy1-54: Phantump - No API data
+⚠ Rate limited at 208 requests
+✗ xy1-55: Trevenant - No API data
+⚠ Rate limited at 209 requests
+✗ xy1-56: Pumpkaboo - No API data
+
+Progress: 210/12280 (1.7%)
+Rate: 86 cards/min | Success: 0 | Failed: 209
+⚠ Rate limited at 210 requests
+✗ xy1-57: Gourgeist - No API data
+⚠ Rate limited at 211 requests
+✗ xy1-58: Diglett - No API data
+⚠ Rate limited at 212 requests
+✗ xy1-6: Ledyba - No API data
+⚠ Rate limited at 213 requests
+✗ xy1-60: Rhyhorn - No API data
+⚠ Rate limited at 214 requests
+✗ xy1-61: Rhydon - No API data
+⚠ Rate limited at 215 requests
+✗ xy1-62: Rhyperior - No API data
+⚠ Rate limited at 216 requests
+✗ xy1-63: Lunatone - No API data
+⚠ Rate limited at 217 requests
+✗ xy1-64: Solrock - No API data
+⚠ Rate limited at 218 requests
+✗ xy1-65: Timburr - No API data
+⚠ Rate limited at 219 requests
+✗ xy1-66: Gurdurr - No API data
+
+Progress: 220/12280 (1.8%)
+Rate: 88 cards/min | Success: 0 | Failed: 219
+⚠ Rate limited at 220 requests
+✗ xy1-68: Sableye - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 221 requests
+✗ xy1-69: Sandile - No API data
+⚠ Rate limited at 222 requests
+✗ xy1-7: Ledian - No API data
+⚠ Rate limited at 223 requests
+✗ xy1-70: Krokorok - No API data
+⚠ Rate limited at 224 requests
+✗ xy1-71: Krookodile - No API data
+⚠ Rate limited at 225 requests
+✗ xy1-72: Zorua - No API data
+⚠ Rate limited at 226 requests
+✗ xy1-73: Zoroark - No API data
+⚠ Rate limited at 227 requests
+✗ xy1-74: Inkay - No API data
+⚠ Rate limited at 228 requests
+✗ xy1-75: Inkay - No API data
+⚠ Rate limited at 229 requests
+✗ xy1-76: Malamar - No API data
+
+Progress: 230/12280 (1.9%)
+Rate: 87 cards/min | Success: 0 | Failed: 229
+⚠ Rate limited at 230 requests
+✗ xy1-77: Malamar - No API data
+⚠ Rate limited at 231 requests
+✗ xy1-78: Yveltal - No API data
+⚠ Rate limited at 232 requests
+✗ xy1-79: Yveltal-EX - No API data
+⚠ Rate limited at 233 requests
+✗ xy1-8: Volbeat - No API data
+⚠ Rate limited at 234 requests
+✗ xy1-80: Skarmory-EX - No API data
+⚠ Rate limited at 235 requests
+✗ xy1-81: Pawniard - No API data
+⚠ Rate limited at 236 requests
+✗ xy1-83: Honedge - No API data
+⚠ Rate limited at 237 requests
+✗ xy1-87: Jigglypuff - No API data
+⚠ Rate limited at 238 requests
+✗ xy1-88: Jigglypuff - No API data
+⚠ Rate limited at 239 requests
+✗ xy1-89: Wigglytuff - No API data
+
+Progress: 240/12280 (2.0%)
+Rate: 88 cards/min | Success: 0 | Failed: 239
+⚠ Rate limited at 240 requests
+✗ xy1-9: Illumise - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 241 requests
+✗ xy1-90: Wigglytuff - No API data
+⚠ Rate limited at 242 requests
+✗ xy1-91: Mr. Mime - No API data
+⚠ Rate limited at 243 requests
+✗ xy1-92: Spritzee - No API data
+⚠ Rate limited at 244 requests
+✗ xy1-94: Swirlix - No API data
+⚠ Rate limited at 245 requests
+✗ xy1-95: Slurpuff - No API data
+⚠ Rate limited at 246 requests
+✗ xy1-96: Xerneas - No API data
+⚠ Rate limited at 247 requests
+✗ xy1-97: Xerneas-EX - No API data
+⚠ Rate limited at 248 requests
+✗ basep-1: Pikachu - No API data
+⚠ Rate limited at 249 requests
+✗ basep-10: Meowth - No API data
+
+Progress: 250/12280 (2.0%)
+Rate: 86 cards/min | Success: 0 | Failed: 249
+⚠ Rate limited at 250 requests
+✗ basep-11: Eevee - No API data
+⚠ Rate limited at 251 requests
+✗ basep-12: Mewtwo - No API data
+⚠ Rate limited at 252 requests
+✗ basep-13: Venusaur - No API data
+⚠ Rate limited at 253 requests
+✗ basep-14: Mewtwo - No API data
+⚠ Rate limited at 254 requests
+✗ basep-18: Team Rocket's Meowth - No API data
+⚠ Rate limited at 255 requests
+✗ basep-19: Sabrina's Abra - No API data
+⚠ Rate limited at 256 requests
+✗ basep-2: Electabuzz - No API data
+⚠ Rate limited at 257 requests
+✗ basep-20: Psyduck - No API data
+⚠ Rate limited at 258 requests
+✗ basep-21: Moltres - No API data
+⚠ Rate limited at 259 requests
+✗ basep-23: Zapdos - No API data
+
+Progress: 260/12280 (2.1%)
+Rate: 88 cards/min | Success: 0 | Failed: 259
+⚠ Rate limited at 260 requests
+✗ basep-25: Flying Pikachu - No API data
+⏸ Rate limit pause (5 seconds)...
+⚠ Rate limited at 261 requests
+✗ basep-26: Pikachu - No API data
+⚠ Rate limited at 262 requests
+✗ basep-27: Pikachu - No API data
+⚠ Rate limited at 263 requests
+✗ basep-28: Surfing Pikachu - No API data
+⚠ Rate limited at 264 requests
+✗ basep-29: Marill - No API data
+⚠ Rate limited at 265 requests
+✗ basep-3: Mewtwo - No API data
+⚠ Rate limited at 266 requests
+✗ basep-30: Togepi - No API data
+⚠ Rate limited at 267 requests
+✗ basep-32: Smeargle - No API data
+⚠ Rate limited at 268 requests
+✗ basep-33: Scizor - No API data
+⚠ Rate limited at 269 requests
+✗ basep-34: Entei - No API data
+
+Progress: 270/12280 (2.2%)
+Rate: 86 cards/min | Success: 0 | Failed: 269
+⚠ Rate limited at 270 requests
+✗ basep-35: Pichu - No API data
+⚠ Rate limited at 271 requests
+✗ basep-36: Igglybuff - No API data
+⚠ Rate limited at 272 requests
+✗ basep-37: Hitmontop - No API data
+⚠ Rate limited at 273 requests
+✗ basep-38: Unown [J] - No API data
+⚠ Rate limited at 274 requests
+✗ basep-39: Misdreavus - No API data
+⚠ Rate limited at 275 requests
+✗ basep-4: Pikachu - No API data
+⚠ Rate limited at 276 requests
+✗ basep-43: Machamp - No API data
+⚠ Rate limited at 277 requests
+✗ basep-44: Magmar - No API data

@@ -200,3 +200,45 @@ digest: "3373263697"
  GET /deck-analyzer?_rsc=w6maa 200 in 17ms
  GET /deck-analyzer 200 in 40ms
  GET /deck-analyzer 200 in 26ms
+ GET /deck-analyzer 200 in 55ms
+ ✓ Compiled /api/stats in 294ms (703 modules)
+ GET /api/stats 200 in 1345ms
+ GET / 200 in 1398ms
+ ✓ Compiled /budget-builder in 440ms (1435 modules)
+ GET /budget-builder 200 in 136ms
+ ✓ Compiled /cards in 296ms (746 modules)
+ ✓ Compiled /api/cards in 120ms (752 modules)
+ GET /api/cards? 200 in 1837ms
+ GET /api/cards? 200 in 1831ms
+ GET /api/cards?page=1 200 in 1588ms
+ GET /deck-analyzer 200 in 88ms
+ ○ Compiling /build-around ...
+ ✓ Compiled /build-around in 606ms (1480 modules)
+ ✓ Compiled /api/cards in 96ms (759 modules)
+ GET /api/cards? 200 in 822ms
+ GET /api/cards? 200 in 813ms
+ GET /api/cards?page=1 200 in 1046ms
+ ✓ Compiled /dashboard in 265ms (1507 modules)
+ GET /dashboard?_rsc=3y0gy 200 in 11ms
+ ✓ Compiled in 806ms (1666 modules)
+ ✓ Compiled in 101ms (742 modules)
+ ✓ Compiled in 189ms (1666 modules)
+ ✓ Compiled in 84ms (742 modules)
+ ✓ Compiled in 119ms (742 modules)
+ ✓ Compiled in 180ms (1666 modules)
+ ✓ Compiled in 180ms (742 modules)
+ ✓ Compiled in 283ms (1666 modules)
+ ✓ Compiled in 94ms (742 modules)
+ ✓ Compiled in 86ms (742 modules)
+ ✓ Compiled in 151ms (1484 modules)
+ ✓ Compiled in 91ms (742 modules)
+ ✓ Compiled in 227ms (1498 modules)
+ ✓ Compiled in 451ms (1498 modules)
+   Reload env: .env.local
+ ✓ Compiled in 357ms (1666 modules)
+ ✓ Compiled in 171ms (742 modules)
+ ✓ Compiled in 455ms (1666 modules)
+ ✓ Compiled in 381ms (742 modules)
+ ✓ Compiled in 159ms (742 modules)
+ ✓ Compiled in 86ms (742 modules)
+ ✓ Compiled in 84ms (742 modules)
