@@ -62,6 +62,9 @@ export default function RootLayout({
                       Build Around
                     </Link>
                     <SignedIn>
+                      <Link href="/collections" className="transition-colors hover:text-foreground/80">
+                        Collections
+                      </Link>
                       <Link href="/dashboard" className="transition-colors hover:text-foreground/80">
                         Dashboard
                       </Link>

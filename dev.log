@@ -249,3 +249,193 @@ digest: "3373263697"
  ✓ Compiled in 238ms (742 modules)
  ✓ Compiled in 278ms (742 modules)
  ✓ Compiled in 119ms (742 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 640ms (1487 modules)
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2749404021"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2749404021"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ GET /_next/static/webpack/b8c9a6bfb62730d0.webpack.hot-update.json 404 in 43ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled / in 308ms (774 modules)
+ GET / 200 in 319ms
+ ✓ Compiled /api/stats in 90ms (780 modules)
+ GET / 200 in 151ms
+ GET /dashboard?_rsc=1jqx0 200 in 10ms
+ GET /dashboard?_rsc=1jqx0 200 in 9ms
+ GET /dashboard?_rsc=1jqx0 200 in 15ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 8ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 9ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 8ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 8ms
+ GET /dashboard?_rsc=1jqx0 200 in 8ms
+ GET /dashboard?_rsc=1jqx0 200 in 9ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 10ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 6ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /dashboard?_rsc=1jqx0 200 in 7ms
+ GET /dashboard?_rsc=1jqx0 200 in 5ms
+ GET /api/stats 200 in 1416ms
+ GET /api/stats 200 in 2135ms
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+ ⨯ TypeError: Cannot read properties of null (reading 'useState')
+    at QuickSearch (./src/components/quick-search.tsx:22:80)
+digest: "1685066600"
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:162241)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:10446)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:15122
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at ab (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:11808)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16871
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:46505)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at ab (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:11808)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16871
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:58612
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:59270
+    at aN (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+ ⨯ TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:162241)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:10446)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:15122
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at ab (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:11808)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16871
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:46505)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at ab (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:11808)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16871
+    at aw (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:16908)
+    at a_ (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:49776)
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:58612
+    at /Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:59270
+    at aN (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (/Users/greg/new-better-app/pokemon-catalog-stable/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7) {
+  page: '/'
+}
+ ✓ Compiled in 806ms (1666 modules)
+ ✓ Compiled in 614ms (1680 modules)
+ ✓ Compiled in 318ms (1498 modules)
+ ✓ Compiled in 288ms (1498 modules)

@@ -41,6 +41,9 @@ export function MobileNav() {
             Build Around
           </Link>
           <SignedIn>
+            <Link href="/collections" onClick={() => setOpen(false)} className="text-sm font-medium">
+              Collections
+            </Link>
             <Link href="/dashboard" onClick={() => setOpen(false)} className="text-sm font-medium">
               Dashboard
             </Link>
