@@ -86,4 +86,4 @@ This codebase will become the new production system. During migration:
 1. Follow the patterns established here (Clerk, API routes, Prisma)
 2. Don't add Next.js 15 or React 19 features
 3. Keep dependencies stable and proven
-4. Test thoroughly - this will handle real users soon
+4. Test thoroughly - this will handle real users soon# Force rebuild Sat Jun 21 09:41:28 PDT 2025
