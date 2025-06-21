@@ -21,11 +21,13 @@ import {
   Sparkles,
   AlertCircle,
   CheckCircle2,
-  XCircle
+  XCircle,
+  Share2
 } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { DeckImportExport } from "@/components/deck-import-export"
 
 interface DeckCard {
   cardId: string
@@ -241,41 +243,84 @@ export default function DeckBuilderPage() {
     }
   }
 
-  // Export deck as text
-  const exportDeck = () => {
-    const text = cards.map(c => 
-      `${c.quantity} ${c.card.name} ${c.card.setName} ${c.card.number}`
-    ).join('\n')
-    
-    navigator.clipboard.writeText(text)
-    toast({
-      title: "Copied to clipboard",
-      description: "Deck list copied in PTCGO format"
-    })
-  }
 
-  // Import deck from text
-  const importDeck = () => {
-    // Simple parser - would be more robust in production
-    const lines = importText.trim().split('\n')
-    const imported: DeckCard[] = []
+  // Handle import from parsed deck list
+  const handleImport = async (importedCards: { name: string; quantity: number; set?: string; number?: string }[]) => {
+    setLoading(true)
+    const newCards: DeckCard[] = []
+    const notFound: string[] = []
     
-    // This is a simplified import - in production would match against actual cards
-    lines.forEach(line => {
-      const match = line.match(/^(\d+)\s+(.+)/)
-      if (match) {
-        const quantity = parseInt(match[1])
-        const cardName = match[2]
-        // Would need to look up card by name here
+    try {
+      // Process cards in batches to avoid too many requests
+      for (const item of importedCards) {
+        // Search for card by name (and optionally set/number)
+        const searchParams = new URLSearchParams({ 
+          search: item.name,
+          limit: '10'
+        })
+        
+        if (item.set) {
+          searchParams.append('set', item.set)
+        }
+        
+        const response = await fetch(`/api/cards?${searchParams}`)
+        if (response.ok) {
+          const data = await response.json()
+          const results = data.cards || []
+          
+          // Try to find exact match
+          let card = results.find((c: any) => 
+            c.name.toLowerCase() === item.name.toLowerCase() &&
+            (!item.number || c.number === item.number)
+          )
+          
+          // If no exact match, take first result
+          if (!card && results.length > 0) {
+            card = results[0]
+          }
+          
+          if (card) {
+            const existing = newCards.find(c => c.cardId === card.id)
+            if (existing) {
+              existing.quantity += item.quantity
+            } else {
+              newCards.push({
+                cardId: card.id,
+                quantity: item.quantity,
+                card
+              })
+            }
+          } else {
+            notFound.push(`${item.quantity} ${item.name}`)
+          }
+        }
+      }
+      
+      // Update deck with imported cards
+      setCards(newCards)
+      
+      // Show results
+      if (notFound.length > 0) {
         toast({
-          title: "Import partially implemented",
-          description: "Full import requires card name matching",
+          title: "Import completed with issues",
+          description: `${newCards.length} cards imported. ${notFound.length} cards not found.`,
           variant: "destructive"
         })
+      } else {
+        toast({
+          title: "Import successful",
+          description: `${newCards.length} unique cards imported (${newCards.reduce((sum, c) => sum + c.quantity, 0)} total)`
+        })
       }
-    })
-    
-    setImportExportOpen(false)
+    } catch (error) {
+      toast({
+        title: "Import failed",
+        description: "Error importing deck list",
+        variant: "destructive"
+      })
+    } finally {
+      setLoading(false)
+    }
   }
 
   // Analyze deck
@@ -286,6 +331,34 @@ export default function DeckBuilderPage() {
     
     if (deckId) {
       router.push(`/deck-analyzer?id=${deckId}`)
+    }
+  }
+
+  // Share deck
+  const shareDeck = async () => {
+    if (!deckId) {
+      toast({
+        title: "Save deck first",
+        description: "Please save your deck before sharing",
+        variant: "destructive"
+      })
+      return
+    }
+
+    const shareUrl = `${window.location.origin}/deck/${deckId}`
+    
+    try {
+      await navigator.clipboard.writeText(shareUrl)
+      toast({
+        title: "Link copied!",
+        description: "Share link copied to clipboard"
+      })
+    } catch (error) {
+      toast({
+        title: "Copy failed",
+        description: shareUrl,
+        variant: "destructive"
+      })
     }
   }
 
@@ -325,13 +398,17 @@ export default function DeckBuilderPage() {
             <Upload className="h-4 w-4 mr-1" />
             Import
           </Button>
-          <Button onClick={exportDeck} variant="outline" size="sm">
+          <Button onClick={() => setImportExportOpen(true)} variant="outline" size="sm">
             <Download className="h-4 w-4 mr-1" />
             Export
           </Button>
           <Button onClick={analyzeDeck} variant="outline" size="sm">
             <Sparkles className="h-4 w-4 mr-1" />
             Analyze
+          </Button>
+          <Button onClick={shareDeck} variant="outline" size="sm" disabled={!deckId}>
+            <Share2 className="h-4 w-4 mr-1" />
+            Share
           </Button>
           <Button onClick={saveDeck} disabled={saving}>
             <Save className="h-4 w-4 mr-1" />
@@ -550,30 +627,13 @@ export default function DeckBuilderPage() {
       </div>
 
       {/* Import/Export Dialog */}
-      <Dialog open={importExportOpen} onOpenChange={setImportExportOpen}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Import Deck</DialogTitle>
-          </DialogHeader>
-          <div className="space-y-4">
-            <Textarea
-              value={importText}
-              onChange={(e) => setImportText(e.target.value)}
-              placeholder="Paste your deck list here..."
-              rows={10}
-              className="font-mono text-sm"
-            />
-            <div className="flex justify-end gap-2">
-              <Button variant="outline" onClick={() => setImportExportOpen(false)}>
-                Cancel
-              </Button>
-              <Button onClick={importDeck}>
-                Import
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
+      <DeckImportExport
+        open={importExportOpen}
+        onOpenChange={setImportExportOpen}
+        cards={cards}
+        deckName={deckName}
+        onImport={handleImport}
+      />
     </div>
   )
 }
