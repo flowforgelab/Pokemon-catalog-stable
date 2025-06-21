@@ -46,8 +46,10 @@ export async function POST(
     // Get all cards for finding alternatives (limited to cards with prices)
     const allCards = await prisma.card.findMany({
       where: {
-        marketPrice: { not: null },
-        marketPrice: { gt: 0 }
+        marketPrice: {
+          not: null,
+          gt: 0
+        }
       },
       take: 1000 // Limit for performance
     });
