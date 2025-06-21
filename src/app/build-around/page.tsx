@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Search, Sparkles, Copy, ArrowRight } from "lucide-react"
 import { DeckBuilder } from "@/lib/ai/deck-builder"
-import { Card as CardType } from "@/lib/types"
+import { PokemonCard as CardType } from "@/lib/types"
 
 export default function BuildAroundPage() {
   const [searchQuery, setSearchQuery] = useState("")

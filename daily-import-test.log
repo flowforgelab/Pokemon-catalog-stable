@@ -1047,3 +1047,36 @@ Rate: 47 cards/min
 ✅ sm11-217: Slowpoke & Psyduck-GX
 ✅ sm11-218: Slowpoke & Psyduck-GX
 ✅ sm11-219: Keldeo-GX
+✅ sm11-22: Magmortar
+✅ sm11-220: Raichu & Alolan Raichu-GX
+✅ sm11-221: Raichu & Alolan Raichu-GX
+✅ sm11-222: Mewtwo & Mew-GX
+✅ sm11-223: Latios-GX
+✅ sm11-225: Mega Sableye & Tyranitar-GX
+✅ sm11-226: Mega Sableye & Tyranitar-GX
+✅ sm11-227: Mawile-GX
+
+Progress: 950/950 requests
+Success: 922 | Failed: 27 | Skipped: 0
+Rate: 47 cards/min
+✅ sm11-228: Garchomp & Giratina-GX
+
+⚠️  Daily limit reached (950 requests)
+
+📊 Daily Import Summary
+======================
+Processed: 950 cards
+Succeeded: 923
+Failed: 27
+Skipped: 0
+Time: 20.2 minutes
+
+Total Progress:
+Lifetime Processed: 950
+Lifetime Success: 923
+
+📈 Database Status
+Pokemon with game data: 3919/15602 (25.1%)
+Estimated days to complete: 13
+
+✅ Daily import complete. Next run: tomorrow
