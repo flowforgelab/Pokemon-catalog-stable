@@ -1,0 +1,57 @@
+Starting resumable game data import...
+Loading progress: {
+  lastProcessedIndex: 9,
+  totalProcessed: 10,
+  successCount: 9,
+  failCount: 0,
+  startTime: '2025-06-21T00:49:06.172Z'
+}
+Found 18405 cards to update
+Resuming from card 10...
+
+Processing batch 1 (50 cards)
+Progress: 20/18405 (0.1%) - 0 cards/min - ~354062 min remaining
+Progress: 30/18405 (0.2%) - 0 cards/min - ~236117 min remaining
+Progress: 40/18405 (0.2%) - 0 cards/min - ~177112 min remaining
+Progress: 50/18405 (0.3%) - 0 cards/min - ~141690 min remaining
+Progress: 60/18405 (0.3%) - 0 cards/min - ~118133 min remaining
+
+Processing batch 2 (50 cards)
+Progress: 70/18405 (0.4%) - 0 cards/min - ~101280 min remaining
+Progress: 80/18405 (0.4%) - 0 cards/min - ~88634 min remaining
+Progress: 90/18405 (0.5%) - 0 cards/min - ~78793 min remaining
+Progress: 100/18405 (0.5%) - 0 cards/min - ~70937 min remaining
+Progress: 110/18405 (0.6%) - 0 cards/min - ~64503 min remaining
+
+Processing batch 3 (50 cards)
+Progress: 120/18405 (0.7%) - 0 cards/min - ~59133 min remaining
+Progress: 130/18405 (0.7%) - 0 cards/min - ~54590 min remaining
+Progress: 140/18405 (0.8%) - 0 cards/min - ~50703 min remaining
+Progress: 150/18405 (0.8%) - 0 cards/min - ~47334 min remaining
+Progress: 160/18405 (0.9%) - 0 cards/min - ~44390 min remaining
+
+Processing batch 4 (50 cards)
+Progress: 170/18405 (0.9%) - 0 cards/min - ~41796 min remaining
+Progress: 180/18405 (1.0%) - 0 cards/min - ~39487 min remaining
+Progress: 190/18405 (1.0%) - 0 cards/min - ~37417 min remaining
+Progress: 200/18405 (1.1%) - 1 cards/min - ~35553 min remaining
+Progress: 210/18405 (1.1%) - 1 cards/min - ~33875 min remaining
+
+Processing batch 5 (50 cards)
+Progress: 220/18405 (1.2%) - 1 cards/min - ~32343 min remaining
+Progress: 230/18405 (1.2%) - 1 cards/min - ~30936 min remaining
+Progress: 240/18405 (1.3%) - 1 cards/min - ~29651 min remaining
+Progress: 250/18405 (1.4%) - 1 cards/min - ~28469 min remaining
+Progress: 260/18405 (1.4%) - 1 cards/min - ~27383 min remaining
+
+Processing batch 6 (50 cards)
+Progress: 270/18405 (1.5%) - 1 cards/min - ~26375 min remaining
+Progress: 280/18405 (1.5%) - 1 cards/min - ~25441 min remaining
+Progress: 290/18405 (1.6%) - 1 cards/min - ~24572 min remaining
+Progress: 300/18405 (1.6%) - 1 cards/min - ~23761 min remaining
+Progress: 310/18405 (1.7%) - 1 cards/min - ~23002 min remaining
+
+Processing batch 7 (50 cards)
+Progress: 320/18405 (1.7%) - 1 cards/min - ~22289 min remaining
+Progress: 330/18405 (1.8%) - 1 cards/min - ~21618 min remaining
+Progress: 340/18405 (1.8%) - 1 cards/min - ~20987 min remaining

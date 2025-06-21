@@ -179,14 +179,22 @@ export enum DeckFormat {
 export interface DeckAnalysis {
   id: string;
   deckId: string;
-  strategy: DeckStrategy;
   consistencyScore: number;
+  speedScore: number;
+  resilienceScore: number;
   synergyScore: number;
-  energyCurve: number[];
-  typeDistribution: Record<string, number>;
+  metaScore: number;
+  overallScore: number;
+  strategy: string;
+  strengths: string[];
+  weaknesses: string[];
   recommendations: string[];
-  warnings: string[];
+  energyCurve: any;
+  typeDistribution: any;
+  trainerRatios: any;
+  attackCosts: any;
   createdAt: Date;
+  updatedAt: Date;
 }
 
 export enum DeckStrategy {

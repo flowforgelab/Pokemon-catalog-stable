@@ -150,7 +150,8 @@ model Deck {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  cards DeckCard[]
+  cards    DeckCard[]
+  analysis DeckAnalysis?
 
   @@index([userId])
 }
@@ -169,4 +170,34 @@ model DeckCard {
   @@unique([deckId, cardId])
   @@index([deckId])
   @@index([cardId])
+}
+
+model DeckAnalysis {
+  id                String   @id @default(cuid())
+  deckId            String   @unique
+  
+  // Core scores (0-100)
+  consistencyScore  Int      // Draw/search ratios
+  speedScore        Int      // Energy curve, attack readiness
+  resilienceScore   Int      // Recovery options
+  synergyScore      Int      // Card interactions
+  metaScore         Int      // Matchup analysis
+  overallScore      Int      // Weighted average
+  
+  // Detailed analysis
+  strategy          String   // AGGRO, CONTROL, COMBO, MIDRANGE, STALL
+  strengths         String[]
+  weaknesses        String[]
+  recommendations   String[]
+  
+  // Statistics
+  energyCurve       Json     // Turn-by-turn energy analysis
+  typeDistribution  Json     // Pokemon types breakdown
+  trainerRatios     Json     // Draw/search/disruption ratios
+  attackCosts       Json     // Energy cost distribution
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  
+  deck Deck @relation(fields: [deckId], references: [id], onDelete: Cascade)
 }

@@ -28,6 +28,9 @@ export function MobileNav() {
           <Link href="/cards" onClick={() => setOpen(false)} className="text-sm font-medium">
             Cards
           </Link>
+          <Link href="/deck-analyzer" onClick={() => setOpen(false)} className="text-sm font-medium">
+            AI Analyzer
+          </Link>
           <SignedIn>
             <Link href="/dashboard" onClick={() => setOpen(false)} className="text-sm font-medium">
               Dashboard
