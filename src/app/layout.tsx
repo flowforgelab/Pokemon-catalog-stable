@@ -13,6 +13,7 @@ import { ThemeProvider } from "@/lib/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { MobileNav } from "@/components/mobile-nav"
 import { Toaster } from "@/components/ui/toaster"
+import { Toaster as Sonner } from "sonner"
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -88,6 +89,7 @@ export default function RootLayout({
             </header>
             <main>{children}</main>
             <Toaster />
+            <Sonner />
           </ThemeProvider>
         </body>
       </html>

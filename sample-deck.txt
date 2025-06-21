@@ -1,0 +1,21 @@
+# Sample Pikachu ex Deck for Testing
+
+4 Pikachu ex sv1-123
+2 Raichu sv2-45
+4 Pikachu sv1-122
+2 Zeraora V swsh3-53
+1 Zeraora VMAX swsh3-54
+
+4 Professor's Research sv1-189
+4 Quick Ball sv1-181
+3 Ultra Ball sv1-186
+2 Boss's Orders sv1-172
+2 Switch sv1-183
+2 Ordinary Rod sv1-185
+1 Choice Belt sv1-176
+3 PokéGear 3.0 sv1-180
+2 Marnie sv1-169
+2 Path to the Peak sv1-174
+
+12 Lightning Energy
+4 Twin Energy sv1-188

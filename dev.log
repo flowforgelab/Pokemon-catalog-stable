@@ -1,0 +1,202 @@
+
+> pokemon-catalog-stable@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.18
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1119ms
+ ✓ Compiled /src/middleware in 160ms (182 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 2.3s (1096 modules)
+ ✓ Compiled /api/stats in 233ms (1093 modules)
+ GET /api/stats 200 in 1602ms
+ GET / 200 in 4121ms
+ ✓ Compiled /_not-found in 447ms (1082 modules)
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2749404021"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2749404021"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ GET /apple-touch-icon-precomposed.png 404 in 535ms
+ GET /apple-touch-icon.png 404 in 533ms
+ ⨯ ./src/app/deck-analyzer/page.tsx:11:1
+Module not found: Can't resolve '@/hooks/use-toast'
+[0m [90m  9 |[39m [36mimport[39m { [33mSelect[39m[33m,[39m [33mSelectContent[39m[33m,[39m [33mSelectItem[39m[33m,[39m [33mSelectTrigger[39m[33m,[39m [33mSelectValue[39m } [36mfrom[39m [32m"@/components/ui/select"[39m[0m
+[0m [90m 10 |[39m [36mimport[39m { [33mAlertCircle[39m[33m,[39m [33mSparkles[39m[33m,[39m [33mTrendingUp[39m[33m,[39m [33mShield[39m[33m,[39m [33mZap[39m[33m,[39m [33mTarget[39m[33m,[39m [33mDollarSign[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+[0m[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { useToast } [36mfrom[39m [32m"@/hooks/use-toast"[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 12 |[39m [36mimport[39m { [33mProgress[39m } [36mfrom[39m [32m"@/components/ui/progress"[39m[0m
+[0m [90m 13 |[39m[0m
+[0m [90m 14 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mDeckAnalyzerPage[39m() {[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ○ Compiling /deck-analyzer ...
+ ⨯ ./src/app/deck-analyzer/page.tsx:11:1
+Module not found: Can't resolve '@/hooks/use-toast'
+[0m [90m  9 |[39m [36mimport[39m { [33mSelect[39m[33m,[39m [33mSelectContent[39m[33m,[39m [33mSelectItem[39m[33m,[39m [33mSelectTrigger[39m[33m,[39m [33mSelectValue[39m } [36mfrom[39m [32m"@/components/ui/select"[39m[0m
+[0m [90m 10 |[39m [36mimport[39m { [33mAlertCircle[39m[33m,[39m [33mSparkles[39m[33m,[39m [33mTrendingUp[39m[33m,[39m [33mShield[39m[33m,[39m [33mZap[39m[33m,[39m [33mTarget[39m[33m,[39m [33mDollarSign[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+[0m[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { useToast } [36mfrom[39m [32m"@/hooks/use-toast"[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 12 |[39m [36mimport[39m { [33mProgress[39m } [36mfrom[39m [32m"@/components/ui/progress"[39m[0m
+[0m [90m 13 |[39m[0m
+[0m [90m 14 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mDeckAnalyzerPage[39m() {[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /deck-analyzer 500 in 1368ms
+ GET / 500 in 4ms
+ ⨯ ./src/hooks/use-toast.ts:1:1
+Module not found: Can't resolve 'sonner'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { toast [36mas[39m sonnerToast } [36mfrom[39m [32m'sonner'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+[0m [90m 3 |[39m [36mexport[39m [36minterface[39m [33mToastProps[39m {[0m
+[0m [90m 4 |[39m   title[33m?[39m[33m:[39m string[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/deck-analyzer/page.tsx
+ ⨯ ./src/hooks/use-toast.ts:1:1
+Module not found: Can't resolve 'sonner'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { toast [36mas[39m sonnerToast } [36mfrom[39m [32m'sonner'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+[0m [90m 3 |[39m [36mexport[39m [36minterface[39m [33mToastProps[39m {[0m
+[0m [90m 4 |[39m   title[33m?[39m[33m:[39m string[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/deck-analyzer/page.tsx
+ GET /cards 500 in 759ms
+ GET /import-status 500 in 789ms
+ ✓ Compiled /cards in 437ms (1375 modules)
+ ✓ Compiled /_not-found in 129ms (1378 modules)
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2749404021"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⨯ Error: Clerk: auth() was called but Clerk can't detect usage of clerkMiddleware() (or the deprecated authMiddleware()). Please ensure the following:
+-  clerkMiddleware() (or the deprecated authMiddleware()) is used in your Next.js Middleware.
+- Your Middleware matcher is configured to match this route or page.
+- If you are using the src directory, make sure the Middleware file is inside of it.
+
+For more details, see https://clerk.com/docs/quickstarts/nextjs
+
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "3373263697"
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/b8c9a6bfb62730d0.webpack.hot-update.json 404 in 250ms
+ ✓ Compiled /deck-analyzer in 293ms (697 modules)
+ GET /deck-analyzer 200 in 387ms
+ ✓ Compiled in 330ms (1428 modules)
+ GET /deck-analyzer?_rsc=w6maa 200 in 16ms
+ ✓ Compiled in 166ms (1429 modules)
+ GET /deck-analyzer?_rsc=w6maa 200 in 17ms
+ GET /deck-analyzer 200 in 40ms
+ GET /deck-analyzer 200 in 26ms
